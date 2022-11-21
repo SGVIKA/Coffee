@@ -1,0 +1,24 @@
+@font-face{
+  font-family: 'Gilroy Light';
+  src: url(/asset/fonts/Gilroy-Light.woff2) format('woff2'), url(/asset/fonts/Gilroy-Light.woff) format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy Bold';
+  src: url(/asset/fonts/Gilroy-ExtraBold.woff2) format('woff2'), url(/asset/fonts/Gilroy-ExtraBold.woff) format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --text-color: #000000;
+  --ligth-bg-text-color: #FFFFFF;
+  --btn-bg-color: #F9B300;
+  --bg-select-color: #FFF7E1;
+  --btn-hover-text: #E2A300;
+  --form-color:#F9F9F9;
+}
