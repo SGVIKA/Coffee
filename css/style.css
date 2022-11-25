@@ -26,3 +26,100 @@
   --: ##F3F3F3
   --: ##C9C9C9 */
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1rem;
+}
+
+body {
+  font-family: 'Gilroy Light';
+}
+
+a {
+  text-decoration: none;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.list-reset {
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.conteiner{
+  max-width: 1904px;
+  width: 100%;
+  padding: 0 122px;
+  margin: 0 auto;
+}
+
+.header {}
+
+.header__row {
+  display: flex;
+  align-items: center;
+  padding: 90px 0;
+}
+
+.header__logo {
+  flex-shrink: 0;
+}
+
+.header__navigation {
+  margin-left: auto;
+}
+
+.nav {}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__item {}
+
+.menu__link {
+  display: flex;
+  align-items: center;
+  font-size: 1,5625rem;
+  line-height: ;
+  color: var(--base-text-color);
+}
+
+.header__function {
+  margin-left: auto;
+}
+
+.function {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 31px;
+}
+
+.function li {
+  margin-right: 53px;
+}
+
+.function li:last-child {
+  margin-right: 0;
+}
+
+.function__btn svg{
+  fill: var(--base-text-color);
+}
