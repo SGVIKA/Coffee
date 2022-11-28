@@ -54,6 +54,24 @@ img {
   height: auto;
 }
 
+.h1 {
+  margin: 0;
+  font-family: 'Gilroy Bold';
+  font-size: 5rem;
+  line-height: 120%;
+  color: var(--base-text-color);
+}
+
+.text {
+  font-size: 25px;
+  line-height: 130%;
+  color:  var(--base-text-color);
+}
+
+.text-bold {
+  font-family: 'Gilroy Bold';
+}
+
 .list-reset {
   display: block;
   list-style: none;
@@ -68,6 +86,15 @@ img {
   margin: 0 auto;
 }
 
+.btn {
+  border-radius: 5px;
+  background-color: var(--btn-bg-color);
+  color: var(--ligth-bg-text-color);
+  font-size: 30px;
+  font-weight: 700;
+  padding: 22px 56px;
+}
+
 .header {}
 
 .header__row {
@@ -80,25 +107,38 @@ img {
   flex-shrink: 0;
 }
 
-.header__navigation {
-  margin-left: auto;
+.logo {
+  height: 116px;
 }
 
-.nav {}
+.header__navigation {
+  margin-left: auto;
+  margin-right: auto
+}
 
 .menu {
   display: flex;
   justify-content: space-between;
 }
 
-.menu__item {}
+.menu__item {
+  margin-right: 100px;
+}
+
+.menu__item:last-child {
+  margin-right: auto;
+}
 
 .menu__link {
-  display: flex;
+  display: inline;
   align-items: center;
   font-size: 1,5625rem;
-  line-height: ;
+  line-height: 130%;
   color: var(--base-text-color);
+}
+
+.menu__link:hover {
+  border-bottom: 2px solid var(--btn-bg-color);
 }
 
 .header__function {
@@ -112,14 +152,69 @@ img {
   height: 31px;
 }
 
-.function li {
+.function__btn {
+  border: none;
+  background: transparent;
+}
+
+.function button {
   margin-right: 53px;
 }
 
-.function li:last-child {
+.function button:last-child {
   margin-right: 0;
 }
 
-.function__btn svg{
-  fill: var(--base-text-color);
+.function__btn svg {}
+
+.function__btn:hover svg {
+  fill: var(--ligth-bg-text-color);
+}
+
+.first-screen {}
+
+.first-screen__bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.first-screen__ellipse {
+  display: flex;
+  justify-content: right;
+  height: 20px;
+}
+
+.first-screen__ellipse svg{
+  margin-left: 30px;
+}
+
+.first-screen__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.first-screen__title {
+  z-index: 1;
+  max-height: 960px;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.first-screen__text {
+  padding: 11px;
+  margin-top: 60px;
+  margin-bottom: 112px;
+}
+
+/* !!! */
+.first-screen__img {
+  position: absolute;
+}
+/* !!! */
+
+.products {
+
 }
