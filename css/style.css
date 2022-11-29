@@ -70,6 +70,22 @@ img {
   color: var(--base-text-color);
 }
 
+.h3-1 {
+  margin: 0;
+  font-family: 'Gilroy Bold';
+  font-size: 25px;
+  line-height: 120%;
+  color: var(--base-text-color);
+}
+
+.h3-2 {
+  margin: 0;
+  font-family: 'Gilroy Bold';
+  font-size: 30px;
+  line-height: 120%;
+  color: var(--base-text-color);
+}
+
 .text {
   font-size: 25px;
   line-height: 130%;
@@ -100,7 +116,6 @@ img {
   color: var(--ligth-bg-text-color);
   font-size: 30px;
   font-weight: 700;
-  padding: 22px 40px;
   text-align: center;
 }
 
@@ -223,7 +238,7 @@ img {
 .first-screen__btn {
   width: 400px;
   height: 80px;
-
+  padding: 22px 40px;
 }
 
 .first-screen__img {
@@ -248,24 +263,75 @@ position: relative;
   display: flex;
   justify-content: space-around;
   margin-top: 276px;
-  background-color: #000000;
-
 }
 
 .products__card {
   display: flex;
-  flex-direction: column;
-  margin-right: 20px;
+  justify-content: space-between;
+  padding-top: 83px;
+}
 
-  background-color: var(--ligth-bg-text-color);
+.service-card {
+  position: relative;
+  width: 400px;
+  padding-bottom: 145px;
   border-radius: 20px;
+  background-color: var(--ligth-bg-text-color);
+  box-shadow: 0px 0px 30px rgba(146, 146, 146, 0.2);
 }
 
-.products__card:last-child {
-  margin-right: 0;
+.service-card__title {
+  text-align: center;
+  max-width: 295px;
+  max-height: 30px;
+  padding-left: 52px;
+  padding-right: 52px;
+  padding-top: 85px;
 }
 
-.service-cards {
- display: flex;
- justify-content: space-between;
+.service-coffee {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.service-coffee__img {
+  padding-top: 67px;
+  padding-left: 22px;
+  max-width: 295px;
+  max-height: 212px;
+}
+
+.vending {}
+
+.vending-img {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -48px;
+  left: 50%;
+  width: 235px;
+  height: 278px;
+}
+
+.vending__btn {
+  padding: 15px 124px;
+}
+
+.vending-text {
+  padding-top: 292px;
+}
+
+
+.discounts {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 90px;
+}
+
+.discounts__title {
+
+}
+.h2 {
 }

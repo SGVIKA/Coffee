@@ -91,23 +91,25 @@
     <section class="products section">
       <div class="conteiner">
       <h2 class="products__title h2">Каталоги нашей продукции</h2>
-      <div class="service-cards">
-      <article class="products__card">
-        <figure><img src="/asset/img/service_card/beans_card.jpg" alt="Кофейные зерна"></figure>
-        <h3>Свежеобжаренный кофе</h3>
+      <div class="products__card">
+      <article class="service-card service-coffee">
+        <figure class="service-coffee__img"><img src="/asset/img/service_card/beans_card.jpg" alt="Кофейные зерна"></figure>
+        <h3 class="service-card__title h3-1">Свежеобжаренный кофе</h3>
       </article>
-      <article class="products__card">
-        <figure><img src="/asset/img/service_card/tea_card.png" alt="Чайник"></figure>
-        <h3>Чай и кофейные напитки</h3>
-        <a href="#">Купить</a>
+      <article class="service-card vending">
+        <figure class="vending-img"><img src="/asset/img/service_card/tea_card.png" alt="Чайник"></figure>
+        <div class="vending-text">
+          <h3 class="service-card__title h3-2">Чай и кофейные напитки</h3>
+          <a class="vending__btn btn" href="#">Купить</a>
+        </div>
       </article>
-      <article class="products__card vending-card">
+      <article class="service-card">
         <figure><img src="/asset/img/service_card/machine_card.jpg" alt="Кофемашина"></figure>
-        <h3>Продукция для вендинга</h3>
+        <h3 class="service-card__title h3-1">Продукция для вендинга</h3>
       </article>
-      <article class="products__card">
+      <article class="service-card">
         <figure><img src="/asset/img/service_card/pp_card.jpg" alt="Тарелка"></figure>
-        <h3>Здоровое питание</h3>
+        <h3 class="service-card__title h3-1">Здоровое питание</h3>
       </article>
     </div>
       </div>
@@ -115,8 +117,7 @@
 
     <section class="discounts section">
       <div class="conteiner">
-
-      <h2>Товары со скидкой</h2>
+      <h2 class="discounts__title h2">Товары со скидкой</h2>
       <p>Наша компания предлагает покупать товар со скидкой не только в дни распродаж или в течение действия ограниченных предложений, но и пользоваться скидками постоянно!</p>
       <button type="button">
         <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
