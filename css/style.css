@@ -1,4 +1,4 @@
-@font-face{
+@font-face {
   font-family: 'Gilroy Light';
   src: url(/asset/fonts/Gilroy-Light.woff2) format('woff2'), url(/asset/fonts/Gilroy-Light.woff) format('woff');
   font-weight: 500;
@@ -20,11 +20,9 @@
   --btn-bg-color: #F9B300;
   --bg-select-color: #FFF7E1;
   --btn-hover-text: #E2A300;
-  --form-color:#F9F9F9;
-  /* --: #C4C4C4
-  --: ##FCFCFC
-  --: ##F3F3F3
-  --: ##C9C9C9 */
+  --form-color: #F9F9F9;
+  --comment-color: #5B5B5B;
+  --price-color: #C6C6C6;
 }
 
 *,
@@ -73,7 +71,7 @@ img {
 .h3-1 {
   margin: 0;
   font-family: 'Gilroy Bold';
-  font-size: 25px;
+  font-size: 1.5625rem;
   line-height: 120%;
   color: var(--base-text-color);
 }
@@ -81,15 +79,15 @@ img {
 .h3-2 {
   margin: 0;
   font-family: 'Gilroy Bold';
-  font-size: 30px;
+  font-size: 1.875rem;
   line-height: 120%;
   color: var(--base-text-color);
 }
 
 .text {
-  font-size: 25px;
+  font-size: 1.5625rem;
   line-height: 130%;
-  color:  var(--base-text-color);
+  color: var(--base-text-color);
 }
 
 .text-bold {
@@ -103,7 +101,7 @@ img {
   margin: 0;
 }
 
-.conteiner{
+.conteiner {
   max-width: 1904px;
   width: 100%;
   padding: 0 122px;
@@ -111,13 +109,16 @@ img {
 }
 
 .btn {
+  border: none;
   border-radius: 5px;
   background-color: var(--btn-bg-color);
   color: var(--ligth-bg-text-color);
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 700;
   text-align: center;
 }
+
+/* --- HEADER --- */
 
 .header {}
 
@@ -156,7 +157,7 @@ img {
 .menu__link {
   display: inline;
   align-items: center;
-  font-size: 1,5625rem;
+  font-size: 1, 5625rem;
   line-height: 130%;
   color: var(--base-text-color);
 }
@@ -177,8 +178,8 @@ img {
 }
 
 .function__btn {
-  border: none;
   background: transparent;
+  border: none;
 }
 
 .function button {
@@ -189,11 +190,12 @@ img {
   margin-right: 0;
 }
 
-.function__btn svg {}
-
 .function__btn:hover svg {
   fill: var(--ligth-bg-text-color);
+  content: '';
 }
+
+/* --- FIRST SCREEN --- */
 
 .first-screen {}
 
@@ -202,6 +204,7 @@ img {
   top: 0;
   right: 0;
   z-index: -1;
+  max-width: 827px;
 }
 
 .first-screen__ellipse {
@@ -210,7 +213,7 @@ img {
   height: 20px;
 }
 
-.first-screen__ellipse svg{
+.first-screen__ellipse svg {
   margin-left: 30px;
 }
 
@@ -242,7 +245,7 @@ img {
 }
 
 .first-screen__img {
-position: relative;
+  position: relative;
 }
 
 .col2 {
@@ -259,70 +262,88 @@ position: relative;
   flex-direction: column;
 }
 
+/* --- КАТАЛОГИ НАШЕЙ ПРОДУКЦИИ --- */
+
+.products__bg {
+  position: absolute;
+  top: 1250px;
+  left: 0;
+  z-index: -1;
+  width: 511px;
+}
+
 .products {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-top: 276px;
 }
 
-.products__card {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 83px;
+.products__title {
+  margin-bottom: 83px;
 }
 
-.service-card {
+.products__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+  row-gap: 40px;
+}
+
+.products-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   position: relative;
   width: 400px;
-  padding-bottom: 145px;
+  padding: 35px;
   border-radius: 20px;
   background-color: var(--ligth-bg-text-color);
   box-shadow: 0px 0px 30px rgba(146, 146, 146, 0.2);
 }
 
-.service-card__title {
+.card__title {
+  margin-bottom: 145px;
+}
+
+.card1__title {
+  margin-top: 85px;
   text-align: center;
-  max-width: 295px;
-  max-height: 30px;
-  padding-left: 52px;
-  padding-right: 52px;
-  padding-top: 85px;
+
 }
 
-.service-coffee {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.service-coffee__img {
-  padding-top: 67px;
-  padding-left: 22px;
-  max-width: 295px;
-  max-height: 212px;
-}
-
-.vending {}
-
-.vending-img {
+.card2__img {
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   top: -48px;
-  left: 50%;
-  width: 235px;
-  height: 278px;
 }
 
-.vending__btn {
+.card2__title {
+  margin-top: 292px;
+  text-align: center;
+}
+
+.products-card__btn {
   padding: 15px 124px;
 }
 
-.vending-text {
-  padding-top: 292px;
+.btn-margin {
+  margin-top: 65px;
+  margin-bottom: 65px;
 }
 
+.card3__title {
+  margin-top: 51px;
+  text-align: center;
+}
+
+.card4__title {
+  margin-top: 84px;
+}
+
+/* --- ТОВАРЫ СО СКИДКОЙ --- */
 
 .discounts {
   display: flex;
@@ -331,7 +352,236 @@ position: relative;
 }
 
 .discounts__title {
-
+  display: flex;
+  justify-content: flex-end;
 }
-.h2 {
+
+.discounts__text {
+  display: flex;
+  justify-content: right;
+  max-width: 1107px;
+  text-align: right;
+}
+
+.discount-row {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  column-gap: 70px;
+}
+
+.discounts-cards {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
+
+  overflow: hidden;
+}
+
+.discount-card {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  position: relative;
+  width: 400px;
+  padding: 21px 37px 50px 38px;
+  border-radius: 20px;
+  background-color: var(--ligth-bg-text-color);
+  box-shadow: 0px 0px 20px rgba(146, 146, 146, 0.25);
+}
+
+.discount-card__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.row1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.discount-card__icon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: -35px;
+  width: 70px;
+  height: 70px;
+}
+
+.discount-card__select {
+  margin-top: 21px;
+  margin-left: 60%;
+  padding: 6px 30px;
+  background-color: var(--bg-select-color);
+  border-radius: 5px;
+  border: 1px solid var(--btn-bg-color);
+  color: var(--base-text-color);
+  max-width: 132px;
+  max-height: 33px;
+  font-size: 18px;
+}
+
+.discount {
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: var(--btn-bg-color);
+}
+
+.discount-card__img {
+  margin-top: 20px;
+  width: 172px;
+  height: 311px;
+}
+
+.discount-card__inf {
+  padding: 24px 0 0 0;
+  /* max-height: 311px; */
+}
+
+.inf__row1 {
+  margin-top: 24px;
+}
+
+.inf__row2 {
+  display: flex;
+  align-items: baseline;
+}
+
+.inf__rating {
+  margin-right: 7px;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.inf__comment {
+  color: var(--comment-color);
+  font-size: 0.875rem;
+}
+
+.inf__row3 {
+  margin-top: 0;
+}
+
+.inf__row4 {
+  padding: 15px 0 10px;
+}
+
+.discount-card__title {
+  margin-top: 36px;
+}
+
+.discount-card__text {
+  margin: 10px 52px 0 0;
+}
+
+.discount-card__price {
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.discount-card__price1 {
+  color: var(--price-color);
+  font-weight: 500;
+  font-size: 1.5625rem;
+  line-height: 116%;
+  text-decoration: line-through;
+  margin: 0;
+}
+
+.discount-card__price2 {
+  color: var(--base-text-color);
+  font-size: 2.1875rem;
+  line-height: 120%;
+  margin: 0;
+}
+
+.discount-card__btn {
+  width: 178px;
+  height: 48px;
+  font-size: 1.125rem;
+  line-height: 120%;
+  padding: 13px 46px;
+}
+
+.discounts-cards__btn {
+  background: transparent;
+  border: none;
+}
+
+.more {
+  display: flex;
+  justify-content: right;
+  margin-top: 58px;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 120%;
+  text-align: right;
+  text-decoration: underline;
+  color: var(--base-text-color);
+}
+
+/* --- ПОЧЕМУ СТОИТ РАБОТАТЬ ИМЕННО С НАМИ? --- */
+
+.benefits {
+  margin-top: 117px;
+}
+
+.benefits__title {
+  width: 585px;
+  font-weight: 900;
+  font-size: 3.125rem;
+  line-height: 120%;
+  margin-bottom: 80px;
+}
+
+.benefits__col {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.benefits__img {
+  max-width: 755px;
+}
+
+.benefits__row {
+  display: flex;
+  justify-content: space-between;
+  max-width: 590px;
+}
+
+.benefits__icon {
+  max-width: 84px;
+  max-height: 84px;
+  margin-right: 50px;
+}
+
+.benefit-title {
+  font-weight: 700;
+}
+
+.benefits__text {
+  max-width: 531px;
+}
+
+.benefits__bg {
+  position: absolute;
+  top: inherit;
+  z-index: -2;
+}
+
+/* --- КАК МЫ ОБЖАРИВАЕМ КОФЕ --- */
+
+.coffee-roasting {
+  margin-top: 285px;
+  background-image: url(/asset/img/roasting/bg.jpg);
+  background-position: top;
+  background-size: cover;
+}
+
+.coffee-roasting__bg1 {
+  position: absolute;
+  top: inherit;
 }
