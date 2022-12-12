@@ -119,8 +119,32 @@ img {
   text-align: center;
 }
 
-.btn:hover {
+.btn:hover, .btn:active {
   background-color: var(--btn-hover-text);
+  cursor: pointer;
+}
+
+.select {
+  background-color: var(--bg-select-color);
+  border-radius: 5px;
+  border: 1px solid var(--btn-bg-color);
+  color: var(--base-text-color);
+}
+
+.select:hover,
+.search__btn:hover,
+.function__btn:hover,
+.more:hover {
+  cursor: pointer;
+}
+
+.more:hover, .more:active {
+  background: #F9F9F9;
+  border-radius: 30px;
+  color: var(--btn-bg-color);
+  padding: 10px 24px;
+  opacity: 1;
+  pointer-events: none;
 }
 
 /* --- HEADER --- */
@@ -459,13 +483,11 @@ img {
 }
 
 .discount-card__select {
+  position: relative;
+  z-index: 150;
   margin-top: 21px;
   margin-left: 60%;
   padding: 6px 30px;
-  background-color: var(--bg-select-color);
-  border-radius: 5px;
-  border: 1px solid var(--btn-bg-color);
-  color: var(--base-text-color);
   max-width: 132px;
   max-height: 33px;
   font-size: 18px;
