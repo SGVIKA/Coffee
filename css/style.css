@@ -117,6 +117,7 @@ img {
   font-size: 1.875rem;
   font-weight: 700;
   text-align: center;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .btn:hover,
@@ -134,6 +135,7 @@ img {
 
 .more {
   color: var(--base-text-color);
+  transition: 0.3s ease-in-out;
 }
 
 .select:hover,
@@ -193,6 +195,8 @@ img {
   font-size: 1.5625rem;
   line-height: 130%;
   color: var(--base-text-color);
+  transition: 0.3s ease-in-out;
+  border-bottom: 2px solid transparent;
 }
 
 .menu__link:hover {
@@ -794,6 +798,7 @@ img {
   max-width: 190px;
   position: relative;
   left: -24px;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .news-more:hover {
