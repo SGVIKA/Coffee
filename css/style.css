@@ -103,9 +103,9 @@ img {
 }
 
 .container {
-  max-width: 1904px;
+  max-width: 1660px;
   width: 100%;
-  padding: 0 122px;
+  /* padding: 0 122px; */
   margin: 0 auto;
 }
 
@@ -143,7 +143,10 @@ img {
 .function__btn:hover,
 .more:hover,
 .inst__btn:hover,
-.discounts-cards__btn:hover {
+.discounts-cards__btn:hover,
+.discounts-btn__left:hover,
+.discounts-btn__right:hover,
+.products-card__btn:hover {
   cursor: pointer;
 }
 
@@ -273,7 +276,7 @@ img {
   top: 0;
   right: 0;
   z-index: -1;
-  width: 1366px;
+  width: 900px;
 }
 
 .first-screen__ellipse {
@@ -354,62 +357,64 @@ img {
 
 .products__cards {
   display: flex;
+  justify-content: center;
   column-gap: 20px;
-  row-gap: 40px;
 }
 
 .products-card {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 
   position: relative;
-  max-width: 25%;
-  padding: 35px;
+  width: 400px;
+  height: 539px;
+  padding: 60px 35px 145px 35px;
   border-radius: 20px;
   background-color: var(--ligth-bg-text-color);
   box-shadow: 0px 0px 30px rgba(146, 146, 146, 0.2);
 }
 
-.card__title {
-  margin-bottom: 145px;
+.products-card a {
+  padding: 15px 124px;
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+  transition: position 0, opacity 0.5s 0s, pointer-events 0.5s 0;
 }
 
-.card1__title {
-  margin-top: 85px;
-  text-align: center;
+.products-card figure {
+  max-height: 278px;
+  transition: 0.5s ease-in-out;
+}
 
+.card__title {
+  text-align: center;
+  font-size: 1.5625rem;
+  transition: font-weight 0s ease-in-out,
+    font-size 0s ease-in-out,
+    transform 0.5s ease-in-out;
 }
 
 .card2__img {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: -48px;
+  transition: 0.5s ease-in-out;
 }
 
-.card2__title {
-  margin-top: 292px;
-  text-align: center;
+.products-card:hover figure {
+  transform: translateY(-98px);
 }
 
-.products-card__btn {
-  padding: 15px 124px;
+.products-card:hover h3 {
+  font-weight: 700;
+  font-size: 1.875rem;
+  transform: translateY(-36px);
 }
 
-.btn-margin {
-  margin-top: 65px;
-  margin-bottom: 65px;
-}
-
-.card3__title {
-  margin-top: 51px;
-  text-align: center;
-}
-
-.card4__title {
-  margin-top: 84px;
+.products-card:hover a {
+  opacity: 1;
+  position: static;
+  pointer-events: auto;
 }
 
 /* --- ТОВАРЫ СО СКИДКОЙ --- */
@@ -426,6 +431,7 @@ img {
   width: 674px;
   height: 674px;
   top: 1750px;
+  pointer-events: none;
 }
 
 
@@ -478,6 +484,12 @@ img {
 .discount-card__row {
   display: flex;
   justify-content: space-between;
+}
+
+.card-row {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .row1 {
@@ -586,6 +598,20 @@ img {
   font-size: 1.125rem;
   line-height: 120%;
   padding: 13px 46px;
+}
+
+.discounts-btn__left,
+.discounts-btn__right {
+  background: transparent;
+  border: none;
+}
+
+.discounts-btn__left {
+  margin-right: 70px;
+}
+
+.discounts-btn__right {
+  margin-left: 70px;
 }
 
 .discounts-cards__btn {
@@ -846,20 +872,28 @@ img {
 
 .inst__row2 {
   margin-top: 6px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr; */
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
-.inst__img {
-  width: auto;
+.inst__img img {
+  max-height: 892px;
 }
 
 .inst__cards {
   display: flex;
   justify-content: space-between;
   column-gap: 20px;
-  max-height: 784px;
+  overflow: hidden;
+}
+
+.inst__card img {
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
 }
 
 .inst__card-col {
@@ -869,8 +903,21 @@ img {
 }
 
 .inst__btn {
+  position: relative;
   background: transparent;
   border: none;
+  /* margin-right: 50px; */
+  right: 0;
+
+  /* position: absolute;
+  right: 0;
+  display: flex;
+  align-items: center; */
+}
+
+.inst__btn svg {
+  width: 70px;
+  height: 70px;
 }
 
 /* --- ПОДПИСАТЬСЯ НА НОВОСТИ И РАССЫЛКУ --- */
@@ -1358,8 +1405,7 @@ img {
     margin-top: 60px;
   }
 
-  .card2__img {
-    top: -34px;
+  .card2__img img {
     width: 165px;
   }
 

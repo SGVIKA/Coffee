@@ -35,7 +35,7 @@
 
         <nav class="header__navigation nav">
           <ul class="menu list-reset">
-            <li class="menu__item"><a href="#" class="menu__link">Каталог товаров</a></li>
+            <li class="menu__item"><a href="#katalog" class="menu__link">Каталог товаров</a></li>
             <li class="menu__item"><a href="#" class="menu__link">Блог</a></li>
             <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
           </ul>
@@ -113,26 +113,27 @@
           fill="#F9B300" />
       </svg>
       <div class="container">
-        <h2 class="products__title h2">Каталоги нашей продукции</h2>
+        <h2 class="products__title h2" name="katalog">Каталоги нашей продукции</h2>
         <div class="products__cards">
           <article class="products-card">
-            <figure><img src="/asset/img/service_card/beans_card.jpg" alt="Кофейные зерна"></figure>
-            <h3 class="card__title card1__title h3-1">Свежеобжаренный кофе</h3>
+              <figure><img src="/asset/img/service_card/beans.png" alt="Кофейные зерна"></figure>
+              <h3 class="card__title h3-1">Свежеобжаренный кофе</h3>
+            <a class="products-card__btn btn" href="#">Купить</a>
           </article>
           <article class="products-card">
             <figure class="card2__img"><img src="/asset/img/service_card/tea_card.png" alt="Чайник"></figure>
-            <div class="">
-              <h3 class="card2__title h3-2">Чай и кофейные напитки</h3>
-              <div class="btn-margin"><a class="products-card__btn btn" href="#">Купить</a></div>
-            </div>
+            <h3 class="card__title h3-1">Чай и кофейные напитки</h3>
+            <a class="products-card__btn btn" href="#">Купить</a>
           </article>
           <article class="products-card">
-            <figure><img src="/asset/img/service_card/machine_card.jpg" alt="Кофемашина"></figure>
-            <h3 class="card__title card3__title h3-1">Продукция для вендинга</h3>
+            <figure><img src="/asset/img/service_card/machin.png" alt="Кофемашина"></figure>
+            <h3 class="card__title h3-1">Продукция для вендинга</h3>
+            <a class="products-card__btn btn" href="#">Купить</a>
           </article>
           <article class="products-card">
-            <figure><img src="/asset/img/service_card/pp_card.jpg" alt="Тарелка"></figure>
-            <h3 class="card__title card4__title h3-1">Здоровое питание</h3>
+            <figure><img src="/asset/img/service_card/pp.png" alt="Тарелка"></figure>
+            <h3 class="card__title card__title4 h3-1">Здоровое питание</h3>
+            <a class="products-card__btn btn" href="#">Купить</a>
           </article>
         </div>
       </div>
@@ -154,8 +155,8 @@
               или&nbsp;в&nbsp;течение действия ограниченных предложений, но и пользоваться скидками постоянно!</p>
           </div>
         </div>
-        <div class="discount-row cards-row">
-          <button class="discounts-cards__btn" type="button">
+        <div class="discounts__row card-row">
+          <button class="discounts-btn__left" type="button">
             <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="35" cy="35" r="35" transform="rotate(-180 35 35)" fill="#F9B300" />
               <path
@@ -518,7 +519,7 @@
               </div>
             </article>
           </div>
-          <button class="discounts-cards__btn" type="button">
+          <button class="discounts-btn__right" type="button">
             <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="35" cy="35" r="35" fill="#F9B300" />
               <path
