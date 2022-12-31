@@ -105,7 +105,6 @@ img {
 .container {
   max-width: 1660px;
   width: 100%;
-  /* padding: 0 122px; */
   margin: 0 auto;
 }
 
@@ -163,7 +162,7 @@ img {
 .header__row {
   display: flex;
   align-items: center;
-  padding: 90px 0;
+  padding: 22px 0 90px 0;
 }
 
 .header__logo {
@@ -214,21 +213,22 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 31px;
 }
 
 .function__btn {
   background: transparent;
   border: none;
   height: 31px;
-}
-
-.function__btn {
   margin-right: 53px;
 }
 
 .function__btn:last-child {
   margin-right: 0;
+}
+
+.function__btn svg {
+  height: auto;
+  width: 31px;
 }
 
 /* SEARCH */
@@ -282,11 +282,11 @@ img {
 .first-screen__ellipse {
   display: flex;
   justify-content: right;
-  height: 20px;
 }
 
 .first-screen__ellipse svg {
   margin-left: 30px;
+  height: 20px;
 }
 
 .first-screen__row {
@@ -366,7 +366,6 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-
   position: relative;
   width: 400px;
   height: 539px;
@@ -380,8 +379,8 @@ img {
   padding: 15px 124px;
   opacity: 0;
   position: absolute;
+  bottom: 0;
   pointer-events: none;
-  transition: position 0s, opacity 0.5s 0s, pointer-events 0.5s 0s;
 }
 
 .products-card figure {
@@ -459,8 +458,6 @@ img {
   display: flex;
   justify-content: flex-end;
   column-gap: 70px;
-  right: 0;
-  max-width: 91%;
 }
 
 .discounts-cards {
@@ -524,22 +521,28 @@ img {
 }
 
 .discount-card__img {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   width: 172px;
   height: 311px;
 }
 
 .discount-card__inf {
-  padding: 24px 0 0 0;
+  /* padding: 24px 0 0 0; */
 }
 
 .inf__row1 {
-  margin-top: 24px;
+  width: 133px;
+  height: 25px;
 }
 
 .inf__row2 {
   display: flex;
   align-items: baseline;
+}
+
+.inf__row3 {
+  width: 127px;
+  height: 19px;
 }
 
 .inf__rating {
@@ -558,15 +561,26 @@ img {
 }
 
 .inf__row4 {
-  padding: 15px 0 10px;
+  /* padding: 15px 0 10px; */
+}
+
+.inf__row4 p {
+  font-size: 1.125rem;
+}
+
+.inf__row4 svg {
+  width: 127px;
+  height: 10px;
 }
 
 .discount-card__title {
   margin-top: 36px;
+  font-size: 1.5625rem;
 }
 
 .discount-card__text {
   margin: 10px 52px 0 0;
+  font-size: 1.125rem;
 }
 
 .discount-card__price {
@@ -623,9 +637,6 @@ img {
   display: flex;
   justify-content: right;
   margin-top: 58px;
-  font-weight: 500;
-  font-size: 1.25rem;
-  line-height: 120%;
   text-align: right;
   text-decoration: underline;
   color: var(--base-text-color);
@@ -633,6 +644,9 @@ img {
 
 .discounts-cards__more a {
   padding: 10px 24px;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 120%;
 }
 
 /* --- ПОЧЕМУ СТОИТ РАБОТАТЬ ИМЕННО С НАМИ? --- */
@@ -734,7 +748,6 @@ img {
 
 .news {
   margin-top: 36px;
-
   background: url(/asset/img/news/Group\ 249.svg);
   background-position: top;
   background-size: cover;
@@ -872,8 +885,6 @@ img {
 
 .inst__row2 {
   margin-top: 6px;
-  /* display: grid; */
-  /* grid-template-columns: 1fr 1fr; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -906,13 +917,7 @@ img {
   position: relative;
   background: transparent;
   border: none;
-  /* margin-right: 50px; */
   right: 0;
-
-  /* position: absolute;
-  right: 0;
-  display: flex;
-  align-items: center; */
 }
 
 .inst__btn svg {
@@ -1267,8 +1272,7 @@ img {
   }
 
   .container {
-    max-width: 1180px;
-    padding: 0 84px;
+    max-width: 1181px;
   }
 
   .btn {
@@ -1282,7 +1286,7 @@ img {
   }
 
   .header__row {
-    padding: 60px 0;
+    padding: 21px 0 60px 0;
   }
 
   .logo {
@@ -1342,8 +1346,8 @@ img {
   }
 
   .first-screen__ellipse svg {
-    height: 14px;
     margin-left: 20px;
+    height: 14px;
   }
 
   .first-screen__title {
@@ -1365,17 +1369,16 @@ img {
     font-size: 1.3125rem;
   }
 
+  .first-screen__img {
+    width: 636px;
+  }
+
   .col2 {
     max-width: 662px;
   }
 
   .col3 {
-    position: absolute;
     margin-left: 562px;
-  }
-
-  .first-screen__img {
-    width: 636px;
   }
 
   .products__bg {
@@ -1392,42 +1395,32 @@ img {
   }
 
   .products-card {
-    max-width: 25%;
-    padding: 23px;
+    width: 280px;
+    height: 381px;
+    padding: 50px 23px 104px 23px;
     border-radius: 14px;
   }
 
-  .card__title {
-    margin-bottom: 102px;
-  }
-
-  .card1__title {
-    margin-top: 60px;
-  }
-
-  .card2__img img {
-    width: 165px;
-  }
-
-  .card2__title {
-    margin-top: 207px;
-  }
-
-  .products-card__btn {
+  .products-card a {
     padding: 10px 86px;
   }
 
-  .btn-margin {
-    margin-top: 45px;
-    margin-bottom: 57px;
+  .products-card figure>img {
+    max-height: 196px;
+    max-width: 188px;
   }
 
-  .card3__title {
-    margin-top: 38px;
+  .card__title {
+    font-size: 1.125rem;
   }
 
-  .card4__title {
-    margin-top: 61px;
+  /* .products-card:hover figure {
+    transform: translateY(-98px);
+  } */
+
+  .products-card:hover h3 {
+    font-size: 1.3125rem;
+    transform: translateY(-34px);
   }
 
   .discounts {
@@ -1474,110 +1467,93 @@ img {
     font-size: 0.75rem;
   }
 
-  /* РРРРРРРРРРРРРРРР */
-
   .discount {
-    font-weight: 700;
-    font-size: 1.125rem;
-    color: var(--btn-bg-color);
+    font-size: 0.75rem;
   }
 
   .discount-card__img {
-    margin-top: 20px;
-    width: 172px;
-    height: 311px;
+    /* margin-top: 14px; */
+    width: 120px;
+    height: 218px;
   }
 
   .discount-card__inf {
-    padding: 24px 0 0 0;
+    /* padding: 16px 0 0 0; */
   }
 
   .inf__row1 {
-    margin-top: 24px;
-  }
-
-  .inf__row2 {
-    display: flex;
-    align-items: baseline;
+    width: 94px;
+    height: 18px;
   }
 
   .inf__rating {
-    margin-right: 7px;
-    font-weight: 700;
-    font-size: 1.25rem;
-  }
-
-  .inf__comment {
-    color: var(--comment-color);
+    margin-right: 6px;
     font-size: 0.875rem;
   }
 
+  .inf__comment {
+    font-size: 0.625rem;
+  }
+
   .inf__row3 {
-    margin-top: 0;
+    width: 89px;
+    height: 13px;
   }
 
   .inf__row4 {
-    padding: 15px 0 10px;
+    /* padding: 15px 0 10px;i */
+  }
+
+  .inf__row4 p {
+    font-size: 0.75rem;
+  }
+
+  .inf__row4 svg {
+    width: 88px;
+    height: 7px;
   }
 
   .discount-card__title {
-    margin-top: 36px;
+    margin-top: 25px;
+    font-size: 1.125rem;
   }
 
   .discount-card__text {
-    margin: 10px 52px 0 0;
-  }
-
-  .discount-card__price {
-    margin-top: 8px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    margin: 8px 47px 0 0;
+    font-size: 0.75rem;
   }
 
   .discount-card__price1 {
-    color: var(--price-color);
-    font-weight: 500;
-    font-size: 1.5625rem;
+    font-size: 1.125rem;
     line-height: 116%;
-    text-decoration: line-through;
-    margin: 0;
   }
 
   .discount-card__price2 {
-    color: var(--base-text-color);
-    font-size: 2.1875rem;
-    line-height: 120%;
-    margin: 0;
+    font-size: 1.5rem;
   }
 
   .discount-card__btn {
-    width: 178px;
-    height: 48px;
-    font-size: 1.125rem;
+    width: 125px;
+    height: 33px;
+    font-size: 0.75rem;
     line-height: 120%;
-    padding: 13px 46px;
+    padding: 9px 33px;
   }
 
-  .discounts-cards__btn {
-    background: transparent;
-    border: none;
+  .discounts-btn__left {
+    margin-right: 41px;
+  }
+
+  .discounts-btn__right {
+    margin-left: 41px;
   }
 
   .discounts-cards__more {
-    display: flex;
-    justify-content: right;
-    margin-top: 58px;
-    font-weight: 500;
-    font-size: 1.25rem;
-    line-height: 120%;
-    text-align: right;
-    text-decoration: underline;
-    color: var(--base-text-color);
+    margin-top: 40px;
   }
 
   .discounts-cards__more a {
-    padding: 10px 24px;
+    font-size: 0.875rem;
   }
 
   /* --- ПОЧЕМУ СТОИТ РАБОТАТЬ ИМЕННО С НАМИ? --- */
