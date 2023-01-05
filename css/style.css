@@ -661,7 +661,7 @@ img {
   margin-top: 117px;
   background: url(/asset/img/benefits/Group\ 247.svg) 100% 100%;
   background-position: top;
-  background-size: cover;
+  background-size: 100%;
 }
 
 .benefits__title {
@@ -710,20 +710,11 @@ img {
 /* --- КАК МЫ ОБЖАРИВАЕМ КОФЕ --- */
 
 .coffee-roasting {
-  background: url(/asset/img/roasting/bg.jpg);
-  background-position: center;
-  background-size: cover;
-}
-
-.coffee-roasting__bg1 {
-  position: relative;
-  width: 100%;
-  top: -10px;
-  overflow: hidden;
-}
-
-.coffee-roasting__bg1 svg {
-  width: 100%;
+  background: url(/asset/img/roasting/Vector.svg), url(/asset/img/roasting/Vector2.svg), url(/asset/img/roasting/bg.jpg);
+  background-position: top, bottom, center;
+  background-size: 100%, 100%, cover;
+  background-repeat: no-repeat;
+  padding: 193px 0 211px 0;
 }
 
 .coffee-roasting__title {
@@ -744,24 +735,13 @@ img {
   padding: 22px 67px;
 }
 
-.coffee-roasting__bg2 {
-  position: relative;
-  width: 100%;
-  bottom: -10px;
-  overflow: hidden;
-}
-
-.coffee-roasting__bg2 svg {
-  width: 100%;
-}
-
 /* --- НОВОСТИ КОМПАНИИ --- */
 
 .news {
   margin-top: 36px;
   background: url(/asset/img/news/Group\ 249.svg);
   background-position: top;
-  background-size: cover;
+  background-size: 100%;
 }
 
 .news-cards {
@@ -850,15 +830,15 @@ img {
   justify-content: space-between;
   align-items: center;
   padding: 10px 24px;
-  max-width: 131px;
+  max-width: 190px;
+  border-radius: 30px;
+  margin-left: -24px;
   transition: background-color 0.3s ease-in-out;
 }
 
-
-
-.news-more:hover {
+.news-card__more:hover {
+  background-color: #F9F9F9;
   padding: 10px 24px;
-  background: #F9F9F9;
   border-radius: 30px;
 }
 
@@ -869,10 +849,50 @@ img {
 
 .type2__text {
   margin-top: 40px;
+  margin-bottom: 26px;
 }
 
-.type2__more {
-  margin-top: 50px;
+.arrow {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  width: 20px;
+  height: 2px;
+  margin-left: 10px;
+}
+
+.arrow span {
+  position: relative;
+  top: 2px;
+  width: 13px;
+  height: 1px;
+  background-color: var(--btn-bg-color);
+  left: 0;
+  display: block;
+}
+
+.arrow span::after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 1px;
+  top: -3px;
+  right: -2px;
+  background-color: var(--btn-bg-color);
+  transform: rotate(45deg);
+  border-radius: 1.5px;
+}
+
+.arrow span::before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 1px;
+  top: 2px;
+  right: -1px;
+  background-color: var(--btn-bg-color);
+  transform: rotate(-45deg);
+  border-radius: 1.5px;
 }
 
 /* --- МЫ В INSTAGRAM--- */
