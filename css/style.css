@@ -218,7 +218,6 @@ img {
 .function__btn {
   background: transparent;
   border: none;
-  height: 31px;
   margin-right: 53px;
 }
 
@@ -253,7 +252,6 @@ img {
   font-weight: 500;
   font-size: 1.25rem;
   line-height: 130%;
-  color: #C4C4C4;
   border: none;
   border-radius: 30px;
   box-shadow: 0px 0px 20px rgba(157, 157, 157, 0.25);
@@ -261,12 +259,15 @@ img {
 
 .search__btn {
   border: none;
-  height: 31px;
-  width: 32px;
   position: absolute;
   top: 10px;
   left: 27px;
   background: transparent;
+}
+
+.search__btn svg {
+  height: 31px;
+  width: 32px;
 }
 
 /* --- FIRST SCREEN --- */
@@ -277,6 +278,7 @@ img {
   right: 0;
   z-index: -1;
   width: 900px;
+  height: 1912px;
 }
 
 .first-screen__ellipse {
@@ -287,6 +289,7 @@ img {
 .first-screen__ellipse svg {
   margin-left: 30px;
   height: 20px;
+  width: 20px;
 }
 
 .first-screen__row {
@@ -319,6 +322,7 @@ img {
 
 .first-screen__img {
   position: relative;
+  width: 899px;
 }
 
 .col2 {
@@ -343,6 +347,7 @@ img {
   left: 0;
   z-index: -1;
   height: 1348px;
+  width: 510px;
 }
 
 .products {
@@ -383,8 +388,9 @@ img {
   pointer-events: none;
 }
 
-.products-card figure {
+.products-card figure>img {
   max-height: 278px;
+  max-width: 295px;
   transition: 0.5s ease-in-out;
 }
 
@@ -521,13 +527,8 @@ img {
 }
 
 .discount-card__img {
-  /* margin-top: 20px; */
   width: 172px;
   height: 311px;
-}
-
-.discount-card__inf {
-  /* padding: 24px 0 0 0; */
 }
 
 .inf__row1 {
@@ -558,10 +559,6 @@ img {
 
 .inf__row3 {
   margin-top: 0;
-}
-
-.inf__row4 {
-  /* padding: 15px 0 10px; */
 }
 
 .inf__row4 p {
@@ -754,7 +751,7 @@ img {
   align-items: baseline;
 }
 
-.news__more {
+.news__more a {
   font-weight: 500;
   font-size: 1.25rem;
   line-height: 120%;
@@ -763,7 +760,7 @@ img {
   color: var(--base-text-color);
 }
 
-.news__more a {
+.news__more {
   padding: 10px 24px;
 }
 
@@ -789,6 +786,7 @@ img {
 
 .news-card__col1 {
   overflow: hidden;
+  border-radius: 20px 0 0 20px;
 }
 
 .news-card__img {
@@ -877,7 +875,7 @@ img {
   width: 8px;
   height: 1px;
   top: -3px;
-  right: -2px;
+  right: -1px;
   background-color: var(--btn-bg-color);
   transform: rotate(45deg);
   border-radius: 1.5px;
@@ -901,6 +899,7 @@ img {
   padding-top: 85px;
   background: url(/asset/img/inst/Group\ 251.svg);
   background-size: cover;
+  overflow: hidden;
 }
 
 .inst__row1 {
@@ -910,47 +909,67 @@ img {
 
 .inst__title {
   margin-right: 54px;
+  font-size: 3.125rem;
 }
 
 .inst__icon {
-  max-width: 86px;
+  width: 86px;
+  height: 86px;
 }
 
 .inst__row2 {
   margin-top: 6px;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
+  /* overflow: hidden; */
+}
+
+.inst__img {
+  position: relative;
+  width: 663px;
+/* height: 896px; */
 }
 
 .inst__img img {
-  max-height: 892px;
+  /* width: 663px; */
+  /* width: 663px; */
+/* height: 896px; */
+  /* margin-left: -100px; */
+  /* overflow: hidden; */
 }
 
 .inst__cards {
+  /* position: absolute; */
+  position: relative;
   display: flex;
   justify-content: space-between;
-  column-gap: 20px;
-  overflow: hidden;
+  right: -158px;
+  /* overflow-x: scroll; */
+}
+
+.inst__card-col {
+  /* overflow: hidden; */
+}
+
+.inst__card {
+  margin: 15px 20px;
+  /* overflow: hidden; */
 }
 
 .inst__card img {
   width: 400px;
-  height: auto;
+  /* height: 382px; */
   border-radius: 10px;
-}
-
-.inst__card-col {
-  display: flex;
-  flex-direction: column;
-  row-gap: 20px;
+  /* overflow: hidden; */
 }
 
 .inst__btn {
-  position: relative;
+  position: absolute;
   background: transparent;
   border: none;
   right: 0;
+  /* top: 446px; */
 }
 
 .inst__btn svg {
@@ -1281,27 +1300,22 @@ img {
 @media (max-width: 1349px) {
   .h1 {
     font-size: 3.5rem;
-    line-height: 125%;
   }
 
   .h2 {
     font-size: 2.1875rem;
-    line-height: 125%;
   }
 
   .h3-1 {
     font-size: 1.125rem;
-    line-height: 122%;
   }
 
   .h3-2 {
     font-size: 1.3125rem;
-    line-height: 120%;
   }
 
   .text {
     font-size: 1.125rem;
-    line-height: 130%;
   }
 
   .container {
@@ -1336,11 +1350,7 @@ img {
 
   .menu__link {
     font-size: 1.125rem;
-    line-height: 117%;
-  }
-
-  .function {
-    height: 22px;
+    line-height: 120%;
   }
 
   .function__btn {
@@ -1352,7 +1362,7 @@ img {
   }
 
   .function__btn svg {
-    height: 22px;
+    height: auto;
     width: 22px;
   }
 
@@ -1364,11 +1374,9 @@ img {
     height: 42px;
     padding-left: 72px;
     font-size: 1rem;
-    line-height: 130%;
-    border-radius: 30px;
   }
 
-  .search__btn {
+  .search__btn svg {
     height: 22px;
     width: 22px;
   }
@@ -1381,6 +1389,7 @@ img {
   .first-screen__ellipse svg {
     margin-left: 20px;
     height: 14px;
+    width: 14px;
   }
 
   .first-screen__title {
@@ -1447,10 +1456,6 @@ img {
     font-size: 1.125rem;
   }
 
-  /* .products-card:hover figure {
-    transform: translateY(-98px);
-  } */
-
   .products-card:hover h3 {
     font-size: 1.3125rem;
     transform: translateY(-34px);
@@ -1493,7 +1498,6 @@ img {
 
   .discount-card__select {
     margin-top: 14px;
-    margin-left: 60%;
     padding: 4px 12px;
     max-width: 93px;
     max-height: 23px;
@@ -1505,18 +1509,18 @@ img {
   }
 
   .discount-card__img {
-    /* margin-top: 14px; */
     width: 120px;
     height: 218px;
-  }
-
-  .discount-card__inf {
-    /* padding: 16px 0 0 0; */
   }
 
   .inf__row1 {
     width: 94px;
     height: 18px;
+  }
+
+  .inf__row3 {
+    width: 89px;
+    height: 13px;
   }
 
   .inf__rating {
@@ -1526,15 +1530,6 @@ img {
 
   .inf__comment {
     font-size: 0.625rem;
-  }
-
-  .inf__row3 {
-    width: 89px;
-    height: 13px;
-  }
-
-  .inf__row4 {
-    /* padding: 15px 0 10px;i */
   }
 
   .inf__row4 p {
@@ -1556,9 +1551,12 @@ img {
     font-size: 0.75rem;
   }
 
+  .discount-card__price {
+    margin-top: 1px;
+  }
+
   .discount-card__price1 {
     font-size: 1.125rem;
-    line-height: 116%;
   }
 
   .discount-card__price2 {
@@ -1569,7 +1567,6 @@ img {
     width: 125px;
     height: 33px;
     font-size: 0.75rem;
-    line-height: 120%;
     padding: 9px 33px;
   }
 
@@ -1595,11 +1592,8 @@ img {
     font-size: 0.875rem;
   }
 
-  /* --- ПОЧЕМУ СТОИТ РАБОТАТЬ ИМЕННО С НАМИ? --- */
-
   .benefits {
     margin-top: 59px;
-    padding-bottom: 55px;
   }
 
   .benefits__title {
@@ -1634,10 +1628,8 @@ img {
     font-size: 1.125rem;
   }
 
-  /* --- КАК МЫ ОБЖАРИВАЕМ КОФЕ --- */
-
-  .coffee-roasting__bg1 {
-    top: -50px;
+  .coffee-roasting {
+    padding: 151px 0 128px 0;
   }
 
   .coffee-roasting__text {
@@ -1653,12 +1645,6 @@ img {
     padding: 15px 48px;
   }
 
-  .coffee-roasting__bg2 {
-    bottom: -50px;
-  }
-
-  /* --- НОВОСТИ КОМПАНИИ --- */
-
   .news {
     margin-top: 25px;
   }
@@ -1667,7 +1653,7 @@ img {
     margin-top: 44px;
   }
 
-  .news__more {
+  .news__more a {
     font-size: 0.875rem;
   }
 
@@ -1678,6 +1664,10 @@ img {
 
   .type1 {
     width: 680px;
+  }
+
+  .news-card__col1 {
+    border-radius: 14px 0 0 14px;
   }
 
   .news-card__col2 {
@@ -1697,7 +1687,7 @@ img {
   }
 
   .news-card__more {
-    max-width: 94px;
+    max-width: 150px;
   }
 
   .type2 {
@@ -1707,61 +1697,68 @@ img {
 
   .type2__text {
     margin-top: 30px;
+    margin-bottom: 20px;
   }
 
-  .type2__more {
-    /* Здесь закончила */
-    margin-top: 29px;
+  .arrow {
+    margin-left: 8px;
   }
 
-  /* --- МЫ В INSTAGRAM--- */
+  .arrow span {
+    top: 1px;
+    width: 9px;
+  }
+
+  .arrow span::after {
+    width: 4px;
+    top: -1px;
+  }
+
+  .arrow span::before {
+    width: 4px;
+    top: 1px;
+  }
 
   .inst {
-    padding-top: 85px;
-    background: url(/asset/img/inst/Group\ 251.svg);
-    background-size: cover;
-  }
-
-  .inst__row1 {
-    display: flex;
-    align-items: center;
+    padding-top: 52px;
   }
 
   .inst__title {
-    margin-right: 54px;
+    margin-right: 30px;
+    font-size: 2.1875rem;
   }
 
   .inst__icon {
-    max-width: 86px;
+    width: 60px;
+    height: 60px;
   }
 
   .inst__row2 {
-    margin-top: 6px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
+    margin-top: 7px;
   }
 
-  .inst__img {
-    width: auto;
+  .inst__img img {
+    /* width: 501px; */
+    height: 632px;
+    margin-left: -50px;
   }
 
   .inst__cards {
-    display: flex;
-    justify-content: space-between;
-    column-gap: 20px;
-    max-height: 784px;
+    /* right: -118px; */
   }
 
-  .inst__card-col {
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
+  .inst__card {
+    margin: 15px 20px;
+  }
+
+  .inst__card img {
+    width: 280px;
+    height: 270px;
+    border-radius: 8px;
   }
 
   .inst__btn {
-    background: transparent;
-    border: none;
+    /* top: 316px; */
   }
 
   /* --- ПОДПИСАТЬСЯ НА НОВОСТИ И РАССЫЛКУ --- */
