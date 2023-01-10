@@ -173,6 +173,10 @@ img {
   height: 116px;
 }
 
+.nav {
+  font-size: 1.5625rem;
+}
+
 .header__navigation {
   margin-left: auto;
   margin-right: auto
@@ -801,7 +805,7 @@ img {
 .news-card__col2 {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  justify-content: space-between;
   padding: 40px 81px 30px 84px;
 }
 
@@ -841,18 +845,22 @@ img {
 }
 
 .type2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 680px;
-  padding: 60px 112px 64px 140px;
+  padding: 62px 112px 62px 140px;
 }
 
 .type2__text {
-  margin-top: 40px;
-  margin-bottom: 26px;
+  /* margin-top: 40px; */
+  /* margin-bottom: 26px; */
 }
 
 .arrow {
   display: flex;
   align-items: flex-end;
+  align-items: center;
   position: relative;
   width: 20px;
   height: 2px;
@@ -861,11 +869,11 @@ img {
 
 .arrow span {
   position: relative;
-  top: 2px;
+  top: 1px;
   width: 13px;
   height: 1px;
   background-color: var(--btn-bg-color);
-  left: 0;
+  left: -1px;
   display: block;
 }
 
@@ -886,7 +894,7 @@ img {
   position: absolute;
   width: 8px;
   height: 1px;
-  top: 2px;
+  top: 3px;
   right: -1px;
   background-color: var(--btn-bg-color);
   transform: rotate(-45deg);
@@ -920,48 +928,38 @@ img {
 .inst__row2 {
   margin-top: 6px;
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: flex-end;
   align-items: center;
-  /* overflow: hidden; */
 }
 
 .inst__img {
-  position: relative;
-  width: 663px;
-/* height: 896px; */
+  position: absolute;
+  width: auto;
+  height: 896px;
+  left: 0;
+  /* top: -64px; */
 }
 
 .inst__img img {
-  /* width: 663px; */
-  /* width: 663px; */
-/* height: 896px; */
-  /* margin-left: -100px; */
-  /* overflow: hidden; */
+  width: auto;
+  height: 896px;
 }
 
 .inst__cards {
-  /* position: absolute; */
   position: relative;
   display: flex;
-  justify-content: space-between;
   right: -158px;
-  /* overflow-x: scroll; */
-}
-
-.inst__card-col {
-  /* overflow: hidden; */
+  max-width: 1240px;
+  margin-top: 64px;
 }
 
 .inst__card {
   margin: 15px 20px;
-  /* overflow: hidden; */
 }
 
 .inst__card img {
   width: 400px;
-  /* height: 382px; */
   border-radius: 10px;
-  /* overflow: hidden; */
 }
 
 .inst__btn {
@@ -969,7 +967,6 @@ img {
   background: transparent;
   border: none;
   right: 0;
-  /* top: 446px; */
 }
 
 .inst__btn svg {
@@ -979,16 +976,11 @@ img {
 
 /* --- ПОДПИСАТЬСЯ НА НОВОСТИ И РАССЫЛКУ --- */
 
-.subscribe__bg {
-  position: relative;
-  z-index: -1;
-  width: 100%;
-  top: -10px;
-  overflow: hidden;
-}
-
-.subscribe__bg svg {
-  width: 100%;
+.subscribe {
+  background: url(/asset/img/email/Group\ 253.svg);
+  background-position: top;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .subscribe__container {
@@ -997,13 +989,19 @@ img {
 }
 
 .subscribe__col1 {
+  margin-top: 299px;
   display: flex;
   flex-direction: column;
   max-width: 1100px;
 }
 
+.subscribe__title {
+  font-size: 3.125rem;
+}
+
 .subscribe__text {
   max-width: 757px;
+  font-size: 1.5625rem;
 }
 
 .subscribe__form {
@@ -1039,7 +1037,6 @@ img {
   padding: 25px 53px;
   font-size: 1.5625rem;
 }
-
 
 .sub-text {
   display: flex;
@@ -1177,12 +1174,19 @@ img {
 
 .dialog-reg__col1 {
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   background-color: var(--btn-bg-color);
-  padding: 60px 30px;
+  padding: 423px 30px 60px 30px;
   max-width: 400px;
   border-radius: 30px 0px 0px 30px;
   height: 100%;
+}
+
+.reg-col__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .reg__title2 {
@@ -1194,7 +1198,7 @@ img {
 
 .reg-text2 {
   color: var(--ligth-bg-text-color);
-  font-size: 25px;
+  font-size: 1.5625rem;
   line-height: 116%;
 }
 
@@ -1202,8 +1206,6 @@ img {
   width: 100%;
   padding: 20px 135px;
   border: 2px solid #FFFFFF;
-  margin-top: 91px;
-
   font-weight: 500;
   font-size: 1.5625rem;
   line-height: 116%;
@@ -1339,6 +1341,10 @@ img {
   .logo {
     height: 80px;
   }
+
+  .nav {
+  font-size: 1.125rem;
+}
 
   .menu__item {
     margin-right: 66px;
@@ -1734,191 +1740,83 @@ img {
   }
 
   .inst__row2 {
-    margin-top: 7px;
+    margin-top: 52px;
+  }
+
+  .inst__img {
+    height: 632px;
   }
 
   .inst__img img {
-    /* width: 501px; */
     height: 632px;
-    margin-left: -50px;
   }
 
   .inst__cards {
-    /* right: -118px; */
-  }
-
-  .inst__card {
-    margin: 15px 20px;
+    right: -118px;
   }
 
   .inst__card img {
-    width: 280px;
-    height: 270px;
+    width: 270px;
     border-radius: 8px;
   }
 
-  .inst__btn {
-    /* top: 316px; */
-  }
-
-  /* --- ПОДПИСАТЬСЯ НА НОВОСТИ И РАССЫЛКУ --- */
-
-  .subscribe__bg {
-    position: relative;
-    z-index: -1;
-    width: 100%;
-    top: -10px;
-    overflow: hidden;
-  }
-
-  .subscribe__bg svg {
-    width: 100%;
-  }
-
-  .subscribe__container {
-    display: flex;
-    flex-direction: row;
+  .inst__btn svg {
+    width: 49px;
+    height: 49px;
   }
 
   .subscribe__col1 {
-    display: flex;
-    flex-direction: column;
-    max-width: 1100px;
+    margin-top: 213px;
+    max-width: 779px;
+  }
+
+  .subscribe__title {
+    font-size: 2.1875rem;
   }
 
   .subscribe__text {
-    max-width: 757px;
+    max-width: 536px;
+    font-size: 1.125rem;
   }
 
   .subscribe__form {
-    position: relative;
-    width: 1100px;
-    margin: 0 auto;
-    background: var(--form-color);
-    border-radius: 40px;
-    margin-top: 60px;
+    width: 779px;
+    border-radius: 28px;
+    margin-top: 38px;
   }
 
   .sub-form__input {
-    border: none;
-    outline: none;
-    background: transparent;
-    width: 100%;
-    height: 80px;
-    padding-left: 60px;
-    border-radius: 40px;
+    height: 57px;
+    padding-left: 40px;
+    border-radius: 28px;
     font-weight: 500;
-    font-size: 1.5625rem;
-    line-height: 130%;
+    font-size: 1.125rem;
   }
 
   .sub-form__btn {
-    border: none;
-    border-radius: 40px;
-    height: 80px;
-    width: 260px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 25px 53px;
-    font-size: 1.5625rem;
-  }
-
-
-  .sub-text {
-    display: flex;
-    justify-content: start;
-    align-items: baseline;
+    border-radius: 28px;
+    width: 179px;
+    height: 57px;
+    padding: 18px 33px;
+    font-size: 1.125rem;
   }
 
   .sub-text p {
-    color: var(--comment-color);
-    font-weight: 500;
-    font-size: 1rem;
-    line-height: 130%;
+    font-size: 0.75rem;
   }
 
   .sub-text a {
-    color: var(--btn-bg-color);
-    font-weight: 500;
-    font-size: 1rem;
-    line-height: 130%;
-    margin-left: 5px;
+    font-size: 0.75rem;
+    margin-left: 3px;
   }
-
-  .subscribe__img {
-    position: absolute;
-    right: 0;
-    top: inherit;
-  }
-
-  /* --- FOOTER --- */
 
   .footer {
-    margin-top: 189px;
-    margin-bottom: 100px;
-  }
-
-  .footer__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .footer__logo {
-    flex-shrink: 0;
-  }
-
-  /* --- DIALOG --- */
-
-  .dialog {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-
-    opacity: 0;
-    pointer-events: none;
-  }
-
-  .dialog_active {
-    opacity: 1;
-    pointer-events: auto;
-  }
-
-  .dialog__overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-  }
-
-  .dialog__content {
-    position: relative;
-    display: flex;
-    justify-content: center;
-  }
-
-  .form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-top: 138px;
+    margin-bottom: 70px;
   }
 
   .form__group {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    margin-bottom: 20px;
-    border: 0;
+    margin-bottom: 15px;
   }
 
   .form__group:last-child {
@@ -1926,156 +1824,69 @@ img {
   }
 
   .form__input {
-    border: none;
-    width: 100%;
-    padding: 23px 60px;
-    font-size: 1.25rem;
-    line-height: 120%;
-    border-radius: 5px;
-    background: #F6F6F6;
-  }
-
-  .form__input::placeholder {
-    color: #C9C9C9;
+    padding: 16px 30px;
+    font-size: 0.875rem;
+    border-radius: 4px;
   }
 
   .dialog__img {
-    position: absolute;
-    top: -43px;
-    left: 0;
-    width: 541px;
-    height: 443px;
-  }
-
-  .dialog__img img {
-    width: auto;
-    height: 100%;
-  }
-
-  /* РЕГИСТРАЦИЯ */
-
-  .reg-col {
-    display: flex;
-    flex-direction: column;
+    top: -9px;
+    width: 326px;
+    height: 216px;
   }
 
   .dialog-reg__col1 {
-    align-items: center;
-    justify-content: flex-end;
-    background-color: var(--btn-bg-color);
-    padding: 60px 30px;
-    max-width: 400px;
-    border-radius: 30px 0px 0px 30px;
-    height: 100%;
+    padding: 301px 23px 47px 23px;
+    max-width: 283px;
+    border-radius: 21px 0px 0px 21px;
   }
 
   .reg__title2 {
-    font-weight: 900;
-    font-size: 2.1875rem;
-    line-height: 125%;
-    color: var(--ligth-bg-text-color);
+    font-size: 1.5rem;
   }
 
   .reg-text2 {
-    color: var(--ligth-bg-text-color);
-    font-size: 25px;
-    line-height: 116%;
+    font-size: 1.125rem;
   }
 
   .reg-btn2 {
-    width: 100%;
-    padding: 20px 135px;
-    border: 2px solid #FFFFFF;
-    margin-top: 91px;
-
-    font-weight: 500;
-    font-size: 1.5625rem;
-    line-height: 116%;
+    padding: 15px 106px;
+    border: 4px solid #FFFFFF;
+    font-size: 1.125rem;
   }
 
   .dialog-reg__col2 {
-    align-items: center;
-    justify-content: space-around;
-    padding: 18px 150px 62px 150px;
-    max-width: 980px;
-    border-radius: 0px 30px 30px 0px;
-    background: var(--ligth-bg-text-color);
-    height: 100%;
-  }
-
-  .reg__logo {
-    flex-shrink: 0;
+    padding: 14px 97px 42px 117px;
+    max-width: 694px;
+    border-radius: 0px 21px 21px 0px;
   }
 
   .reg__logo img {
-    height: 72px;
+    height: 51px;
   }
 
   .reg__title {
-    font-weight: 900;
-    font-size: 2.5rem;
-    line-height: 125%;
+    font-size: 1.75rem;
   }
 
   .reg__text {
-    font-weight: 500;
-    font-size: 1.25rem;
-    line-height: 120%;
-    text-align: center;
-    max-width: 593px;
+    font-size: 0.875rem;
+    max-width: 420px;
   }
 
   .reg-btn {
-    padding: 20px 215px;
-    font-weight: 700;
-    font-size: 1.5625rem;
-    line-height: 120%;
+    padding: 14px 149px;
+    font-size: 1.125rem;
   }
 
   .dialog__close {
-    position: absolute;
-    top: 50px;
-    right: 50px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 22px;
-    height: 22px;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    background-color: transparent;
-    cursor: pointer;
+    top: 35px;
+    right: 35px;
+    width: 18px;
+    height: 18px;
   }
 
   .dialog__close span {
-    position: relative;
-    display: block;
-    width: 30px;
-    height: 1px;
-  }
-
-  .dialog__close span::before,
-  .dialog__close span::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--base-text-color);
-    content: '';
-  }
-
-  .dialog__close span::before {
-    transform: rotate(45deg);
-  }
-
-  .dialog__close span::after {
-    transform: rotate(-45deg);
-  }
-
-  .dialog__close:hover span::before,
-  .dialog__close:hover span::after {
-    background-color: var(--base-text-color);
+    width: 25px;
   }
 }
