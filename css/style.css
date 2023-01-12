@@ -291,6 +291,10 @@ img {
 
 /* --- FIRST SCREEN --- */
 
+.first-screen {
+  overflow: hidden;
+}
+
 .first-screen__bg {
   position: absolute;
   top: 0;
@@ -300,20 +304,33 @@ img {
   height: 1912px;
 }
 
-.first-screen__ellipse {
+.first-screen__el1 {
   display: flex;
   justify-content: right;
 }
 
-.first-screen__ellipse svg {
-  margin-left: 30px;
+.first-screen__el1 svg {
+  width: 120px;
   height: 20px;
-  width: 20px;
 }
 
 .first-screen__row {
   display: flex;
   flex-direction: row;
+}
+
+.col2 {
+  width: 960px;
+}
+
+.col3 {
+  position: absolute;
+  margin-left: 650px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
 }
 
 .first-screen__title {
@@ -331,6 +348,18 @@ img {
   max-width: 658px;
 }
 
+.f-scr__mobile-img {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.first-screen__el2 {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
 .first-screen__btn {
   max-width: 400px;
   max-height: 80px;
@@ -342,20 +371,6 @@ img {
 .first-screen__img {
   position: relative;
   width: 899px;
-}
-
-.col2 {
-  width: 960px;
-}
-
-.col3 {
-  position: absolute;
-  margin-left: 650px;
-}
-
-.col {
-  display: flex;
-  flex-direction: column;
 }
 
 /* --- КАТАЛОГИ НАШЕЙ ПРОДУКЦИИ --- */
@@ -1408,10 +1423,9 @@ img {
     height: 1116px;
   }
 
-  .first-screen__ellipse svg {
-    margin-left: 20px;
+  .first-screen__el1 svg {
+    width: 82px;
     height: 14px;
-    width: 14px;
   }
 
   .first-screen__title {
@@ -2072,174 +2086,151 @@ img {
     width: 32px;
   } */
 
-  .first-screen__container {
-    display: flex;
-    flex-direction: column;
-  }
-
   .first-screen__bg {
-    position: absolute;
-    top: 15px;
-    right: -300px;
-    z-index: -1;
-    width: 863.24px;
+    max-width: 863.24px;
     height: 1011.01px;
-    order: 3;
+    right: -150px;
+    top: 15px;
+
   }
 
-  .first-screen__ellipse {
-    margin-top: 206px;
-    display: flex;
-    justify-content: left;
-    order: 2;
-  }
-
-  .first-screen__ellipse svg {
-    margin-left: 30px;
-    height: 25px;
-    width: 25px;
-  }
-
-   .el1 circle{
-    fill: var(--btn-bg-color);
-  }
-
-  .el2 circle{
-    fill: #E9E9E9;
+  .first-screen__el1 {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
   }
 
   .first-screen__row {
     display: flex;
-    flex-direction: row;
-    order: 1;
-  }
-
-  .first-screen__title {
-    position: relative;
-    z-index: 1;
-    max-width: 960px;
-    width: 100%;
-    margin-top: 30px;
-    margin-bottom: 60px;
-  }
-
-  .first-screen__text {
-    margin-top: 60px;
-    margin-bottom: 112px;
-    max-width: 658px;
-  }
-
-  .first-screen__btn {
-    max-width: 400px;
-    max-height: 80px;
-    padding: 22px 0;
-    text-align: center;
-    font-size: 1.875rem;
-  }
-
-  .first-screen__img {
-    position: relative;
-    width: 899px;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .col2 {
-    width: 960px;
+    max-width: 100%;
   }
 
   .col3 {
     position: absolute;
-    margin-left: 650px;
+    opacity: 0;
+    pointer-events: none;
   }
 
-  .col {
-    display: flex;
-    flex-direction: column;
+  .first-screen__title {
+    max-width: 472px;
+    margin-top: 130px;
+    margin-bottom: 80px;
+    white-space: normal;
+  }
+
+  .first-screen__text {
+    margin: 0;
+    margin-bottom: 206px;
+    max-width: 314px;
+  }
+
+  .f-scr__mobile-img {
+    max-width: 713.38px;
+    height: 614.65px;
+    z-index: -1;
+    right: -111px;
+    top: 381px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .f-scr__mobile-img img {
+    width: 713.38px;
+    height: 614.65px;
+  }
+
+  .first-screen__el2 {
+    position: relative;
+    opacity: 1;
+    pointer-events: auto;
+    margin-bottom: 145px;
+  }
+
+  .first-screen__el2 svg {
+    width: 135px;
+    height: 25px;
+  }
+
+  .first-screen__btn {
+    max-width: 100%;
+    max-height: 70px;
+    padding: 20px 0;
+    font-size: 1.5625rem;
+  }
+
+  .first-screen__img {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
   }
 
   /* --- КАТАЛОГИ НАШЕЙ ПРОДУКЦИИ --- */
 
   .products__bg {
-    position: absolute;
-    top: inherit;
-    left: 0;
-    z-index: -1;
-    height: 1348px;
-    width: 510px;
+    max-width: 900px;
+    height: 1019px;
   }
 
   .products {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 276px;
+    margin-top: 90px;
   }
 
   .products__title {
-    margin-bottom: 83px;
+    margin-bottom: 60px;
   }
 
   .products__cards {
     display: flex;
-    justify-content: center;
-    column-gap: 20px;
-  }
-
-  .products-card {
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    position: relative;
-    width: 400px;
-    height: 539px;
-    padding: 60px 35px 145px 35px;
-    border-radius: 20px;
+    gap: 20px;
+  }
+
+  .products-card {
+    width: 460px;
+    height: 442px;
+    padding: 6px 40px 41px 40px;
+    border-radius: 12px;
     background-color: var(--ligth-bg-text-color);
-    box-shadow: 0px 0px 30px rgba(146, 146, 146, 0.2);
+    box-shadow: 0px 0px 37.5335px rgba(146, 146, 146, 0.2);
   }
 
   .products-card a {
-    padding: 15px 124px;
-    opacity: 0;
-    position: absolute;
-    bottom: 0;
-    pointer-events: none;
+    padding: 20px 145px;
+    opacity: 1;
+    position: relative;
+    pointer-events: auto;
+    transition: none;
   }
 
   .products-card figure>img {
-    max-height: 278px;
-    max-width: 295px;
-    transition: 0.5s ease-in-out;
+    max-height: 244px;
+    max-width: 340px;
+    transition: none;
   }
 
   .card__title {
-    text-align: center;
-    font-size: 1.5625rem;
-    transition: font-weight 0s ease-in-out,
-      font-size 0s ease-in-out,
-      transform 0.5s ease-in-out;
+    font-size: 1.375rem;
+    transition: none
   }
 
   .card2__img {
-    transition: 0.5s ease-in-out;
+    transition: none
   }
 
   .products-card:hover figure {
-    transform: translateY(-98px);
+    transform: none;
   }
 
   .products-card:hover h3 {
-    font-weight: 700;
-    font-size: 1.875rem;
-    transform: translateY(-36px);
+    transform: none;
   }
-
-  .products-card:hover a {
-    opacity: 1;
-    position: static;
-    pointer-events: auto;
-  }
-
-  /* --- ТОВАРЫ СО СКИДКОЙ --- */
 
   .discounts {
     display: flex;
