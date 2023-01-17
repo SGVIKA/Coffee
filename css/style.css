@@ -484,20 +484,9 @@ img {
   align-items: flex-end;
 }
 
-.discount-row {
-  display: flex;
-  align-items: center;
-}
-
 .discounts__text {
   max-width: 1107px;
   text-align: right;
-}
-
-.discount-row {
-  display: flex;
-  justify-content: flex-end;
-  column-gap: 70px;
 }
 
 .discounts-cards {
@@ -546,7 +535,6 @@ img {
 .discount-card__select {
   position: relative;
   z-index: 150;
-  margin-top: 21px;
   margin-left: 60%;
   padding: 6px 30px;
   max-width: 132px;
@@ -575,11 +563,6 @@ img {
   align-items: baseline;
 }
 
-.inf__row3 {
-  width: 127px;
-  height: 19px;
-}
-
 .inf__rating {
   margin-right: 7px;
   font-weight: 700;
@@ -592,7 +575,8 @@ img {
 }
 
 .inf__row3 {
-  margin-top: 0;
+  width: 127px;
+  height: 19px;
 }
 
 .inf__row4 p {
@@ -610,7 +594,8 @@ img {
 }
 
 .discount-card__text {
-  margin: 10px 52px 0 0;
+  margin-top: 10px;
+  max-width: 269px;
   font-size: 1.125rem;
 }
 
@@ -693,6 +678,7 @@ img {
   background: url(/asset/img/benefits/Group\ 247.svg) 100% 100%;
   background-position: top;
   background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .benefits__title {
@@ -750,6 +736,7 @@ img {
 
 .coffee-roasting__title {
   color: var(--ligth-bg-text-color);
+  font-size: 3.125rem;
 }
 
 .coffee-roasting__text {
@@ -764,6 +751,7 @@ img {
 
 .coffee-roasting__btn a {
   padding: 22px 67px;
+  font-size: 1.875rem;
 }
 
 /* --- НОВОСТИ КОМПАНИИ --- */
@@ -773,6 +761,7 @@ img {
   background: url(/asset/img/news/Group\ 249.svg);
   background-position: top;
   background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .news-cards {
@@ -783,6 +772,12 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+}
+
+.news__arrow {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .news__more a {
@@ -1511,10 +1506,6 @@ img {
     max-width: 784px;
   }
 
-  .discount-row {
-    column-gap: 40px;
-  }
-
   .discounts-cards {
     column-gap: 15px;
   }
@@ -2169,10 +2160,9 @@ img {
     pointer-events: none;
   }
 
-  /* --- КАТАЛОГИ НАШЕЙ ПРОДУКЦИИ --- */
-
   .products__bg {
-    max-width: 900px;
+    top: 2870px;
+    max-width: 208px;
     height: 1019px;
   }
 
@@ -2233,343 +2223,260 @@ img {
   }
 
   .discounts {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 90px;
+    margin-top: 100px;
   }
 
   .discounts__decor {
-    position: absolute;
-    z-index: 100;
-    width: 674px;
-    height: 674px;
-    top: 1750px;
-    pointer-events: none;
+    width: 268px;
+    height: 509px;
+    top: 3100px;
   }
 
-
-  .discounts__decor img {
-    top: 0;
-  }
-
-  .discounts__row {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-
-  .discount-row {
-    display: flex;
-    align-items: center;
+  .discounts__title {
+    font-size: 2.5rem;
   }
 
   .discounts__text {
-    max-width: 1107px;
-    text-align: right;
-  }
-
-  .discount-row {
-    display: flex;
-    justify-content: flex-end;
-    column-gap: 70px;
+    max-width: 474px;
   }
 
   .discounts-cards {
-    display: flex;
-    justify-content: space-between;
-    column-gap: 20px;
+    position: relative;
+    left: 154px;
+  }
+
+  .discount-card:last-child {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
   }
 
   .discount-card {
-    display: flex;
-    flex-direction: column;
-    margin-top: 80px;
-    position: relative;
-    width: 400px;
-    padding: 21px 37px 50px 38px;
-    border-radius: 20px;
-    background-color: var(--ligth-bg-text-color);
-    box-shadow: 0px 0px 20px rgba(146, 146, 146, 0.25);
-  }
-
-  .discount-card__row {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .card-row {
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-  }
-
-  .row1 {
-    display: flex;
-    justify-content: space-between;
+    width: 340px;
+    padding: 21px 33px 42px 35px;
+    border-radius: 16px;
+    box-shadow: 0px 0px 17.0069px rgba(146, 146, 146, 0.25);
   }
 
   .discount-card__icon {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    top: -35px;
-    width: 70px;
-    height: 70px;
+    top: -30px;
+    width: 60px;
+    height: 60px;
   }
 
   .discount-card__select {
-    position: relative;
-    z-index: 150;
-    margin-top: 21px;
-    margin-left: 60%;
-    padding: 6px 30px;
-    max-width: 132px;
-    max-height: 33px;
-    font-size: 18px;
+    padding: 6px 20px;
+    max-width: 110px;
+    max-height: 30px;
+    font-size: 1rem;
   }
 
   .discount {
-    font-weight: 700;
-    font-size: 1.125rem;
-    color: var(--btn-bg-color);
-  }
-
-  .discount-card__img {
-    width: 172px;
-    height: 311px;
-  }
-
-  .inf__row1 {
-    width: 133px;
-    height: 25px;
-  }
-
-  .inf__row2 {
-    display: flex;
-    align-items: baseline;
-  }
-
-  .inf__row3 {
-    width: 127px;
-    height: 19px;
-  }
-
-  .inf__rating {
-    margin-right: 7px;
-    font-weight: 700;
-    font-size: 1.25rem;
-  }
-
-  .inf__comment {
-    color: var(--comment-color);
     font-size: 0.875rem;
   }
 
+  .discount-card__img {
+    width: 144px;
+    height: 260px;
+  }
+
+  .inf__row1 {
+    width: 94px;
+    height: 18px;
+  }
+
+  .inf__rating {
+    margin-right: 4px;
+    font-size: 0.875rem;
+  }
+
+  .inf__comment {
+    font-size: 0.625rem;
+  }
+
   .inf__row3 {
-    margin-top: 0;
+    width: 89px;
+    height: 13px;
   }
 
   .inf__row4 p {
-    font-size: 1.125rem;
+    font-size: 0.75rem;
   }
 
   .inf__row4 svg {
-    width: 127px;
-    height: 10px;
+    width: 88px;
+    height: 7px;
   }
 
   .discount-card__title {
-    margin-top: 36px;
-    font-size: 1.5625rem;
+    margin-top: 30px;
+    font-size: 1.375rem;
   }
 
   .discount-card__text {
-    margin: 10px 52px 0 0;
-    font-size: 1.125rem;
+    max-width: 243px;
+    font-size: 1rem;
   }
 
   .discount-card__price {
-    margin-top: 8px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    margin-top: 3px;
   }
 
   .discount-card__price1 {
-    color: var(--price-color);
-    font-weight: 500;
-    font-size: 1.5625rem;
-    line-height: 116%;
-    text-decoration: line-through;
-    margin: 0;
+    font-size: 1.375rem;
   }
 
   .discount-card__price2 {
-    color: var(--base-text-color);
-    font-size: 2.1875rem;
-    line-height: 120%;
-    margin: 0;
+    font-size: 1.625rem;
+    line-height: 125%;
   }
 
   .discount-card__btn {
-    width: 178px;
-    height: 48px;
-    font-size: 1.125rem;
-    line-height: 120%;
-    padding: 13px 46px;
+    width: 149px;
+    height: 40px;
+    font-size: 1rem;
+    padding: 9px 35px;
   }
 
   .discounts-btn__left,
   .discounts-btn__right {
-    background: transparent;
-    border: none;
-  }
-
-  .discounts-btn__left {
-    margin-right: 70px;
-  }
-
-  .discounts-btn__right {
-    margin-left: 70px;
-  }
-
-  .discounts-btn__left svg,
-  .discounts-btn__right svg {
-    width: 70px;
-    height: 70px;
-  }
-
-  .discounts-cards__btn {
-    background: transparent;
-    border: none;
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
   }
 
   .discounts-cards__more {
-    display: flex;
-    justify-content: right;
-    margin-top: 58px;
-    text-align: right;
-    text-decoration: underline;
-    color: var(--base-text-color);
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
   }
-
-  .discounts-cards__more a {
-    padding: 10px 24px;
-    font-weight: 500;
-    font-size: 1.25rem;
-    line-height: 120%;
-  }
-
-  /* --- ПОЧЕМУ СТОИТ РАБОТАТЬ ИМЕННО С НАМИ? --- */
 
   .benefits {
-    margin-top: 117px;
-    background: url(/asset/img/benefits/Group\ 247.svg) 100% 100%;
-    background-position: top;
+    margin-top: 150px;
+    background: url(/asset/img/benefits/Group\ 329.svg);
     background-size: 100%;
+    background-repeat: no-repeat;
   }
 
   .benefits__title {
-    max-width: 585px;
-    font-weight: 900;
-    font-size: 3.125rem;
-    line-height: 120%;
-    margin-bottom: 80px;
+    padding-top: 65px;
+    max-width: 461px;
+    font-size: 2.5rem;
+    line-height: 125%;
+    margin-bottom: 61px;
   }
 
   .benefits__col {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .benefits__img {
-    max-width: 755px;
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
   }
 
   .benefits__row {
-    display: flex;
-    justify-content: space-between;
-    max-width: 590px;
+    max-width: 558px;
   }
 
   .benefits__icon {
-    margin-right: 50px;
+    margin-right: 40px;
   }
 
   .benefits__icon svg {
-    width: 84px;
-    height: 84px;
+    width: 81px;
+    height: 81px;
   }
 
   .benefit-title {
-    font-weight: 700;
-    font-size: 1.875rem;
+    font-size: 1.5625rem;
   }
 
   .benefits__text {
-    max-width: 531px;
-    font-size: 1.5625rem;
+    max-width: 437px;
+    font-size: 1.25rem;
   }
 
   /* --- КАК МЫ ОБЖАРИВАЕМ КОФЕ --- */
 
   .coffee-roasting {
-    background: url(/asset/img/roasting/Vector.svg), url(/asset/img/roasting/Vector2.svg), url(/asset/img/roasting/bg.jpg);
-    background-position: top, bottom, center;
-    background-size: 100%, 100%, cover;
-    background-repeat: no-repeat;
-    padding: 193px 0 211px 0;
+    padding: 186px 34px 0px 34px;
   }
 
   .coffee-roasting__title {
-    color: var(--ligth-bg-text-color);
+    font-size: 2.5rem;
   }
 
   .coffee-roasting__text {
     color: var(--ligth-bg-text-color);
-    margin-top: 100px;
-    max-width: 1246px;
+    font-size: 1.25rem;
+    margin-top: 68px;
+    max-width: 700px;
   }
 
   .coffee-roasting__btn {
-    margin-top: 122px;
+    margin-top: 96px;
+    max-width: 100%;
   }
 
   .coffee-roasting__btn a {
-    padding: 22px 67px;
+    padding: 20px 230px;
+    font-size: 1.5625rem;
   }
-
-  /* --- НОВОСТИ КОМПАНИИ --- */
 
   .news {
-    margin-top: 36px;
-    background: url(/asset/img/news/Group\ 249.svg);
-    background-position: top;
-    background-size: 100%;
+    margin-top: 80px;
+    background: url(/asset/img/news/Rectangle\ 44.svg);
+    background-position: bottom;
   }
 
-  .news-cards {
-    margin-top: 60px;
+  .news__title {
+    font-size: 2.5rem;
   }
 
   .news__row {
+    justify-content: flex-start;
+  }
+
+  .news__arrow {
+    position: relative;
+    opacity: 1;
+    pointer-events: auto;
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    margin-top: 60px;
   }
 
-  .news__more a {
-    font-weight: 500;
-    font-size: 1.25rem;
-    line-height: 120%;
-    text-align: right;
-    text-decoration: underline;
-    color: var(--base-text-color);
+  .news-arrow__left,
+  .news-arrow__right {
+    display: flex;
+    align-items: flex-end;
+    align-items: center;
+    position: relative;
+    width: 100px;
+    height: 16px;
   }
 
-  .news__more {
-    padding: 10px 24px;
+  .news-arrow__left span,
+  .news-arrow__right span {
+    position: relative;
+    top: 1px;
+    width: 100px;
+    height: 2px;
+    background-color: var(--base-text-color);
+    display: block;
+  }
+
+  .news__more1 a {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .news-cards {
+    margin-top: 85px;
   }
 
   .news-cards__row {
