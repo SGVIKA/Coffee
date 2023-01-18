@@ -142,7 +142,7 @@ img {
 .search__btn:hover,
 .function__btn:hover,
 .more:hover,
-.inst__btn:hover,
+.inst__btn1:hover,
 .discounts-cards__btn:hover,
 .discounts-btn__left:hover,
 .discounts-btn__right:hover,
@@ -780,16 +780,13 @@ img {
   pointer-events: none;
 }
 
-.news__more a {
+.news__more1 a {
   font-weight: 500;
   font-size: 1.25rem;
   line-height: 120%;
   text-align: right;
   text-decoration: underline;
   color: var(--base-text-color);
-}
-
-.news__more {
   padding: 10px 24px;
 }
 
@@ -814,7 +811,6 @@ img {
 }
 
 .news-card__col1 {
-  overflow: hidden;
   border-radius: 20px 0 0 20px;
 }
 
@@ -852,7 +848,6 @@ img {
 }
 
 .news-card__more {
-  /* Здесь закончила */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -875,11 +870,6 @@ img {
   justify-content: space-between;
   width: 680px;
   padding: 62px 112px 62px 140px;
-}
-
-.type2__text {
-  /* margin-top: 40px; */
-  /* margin-bottom: 26px; */
 }
 
 .arrow {
@@ -924,6 +914,12 @@ img {
   background-color: var(--btn-bg-color);
   transform: rotate(-45deg);
   border-radius: 1.5px;
+}
+
+.news__more2 {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
 }
 
 /* --- МЫ В INSTAGRAM--- */
@@ -987,16 +983,28 @@ img {
   border-radius: 10px;
 }
 
-.inst__btn {
+.inst__btn1 {
   position: absolute;
   background: transparent;
   border: none;
   right: 0;
 }
 
-.inst__btn svg {
+.inst__btn1 svg {
   width: 70px;
   height: 70px;
+}
+
+.inst__btn2 {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.inst__row-mobile {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
 }
 
 /* --- ПОДПИСАТЬСЯ НА НОВОСТИ И РАССЫЛКУ --- */
@@ -1006,11 +1014,13 @@ img {
   background-position: top;
   background-size: 100%;
   background-repeat: no-repeat;
+  overflow-x: hidden;
 }
 
 .subscribe__container {
   display: flex;
   flex-direction: row;
+  overflow-x: hidden;
 }
 
 .subscribe__col1 {
@@ -1081,14 +1091,17 @@ img {
   font-weight: 500;
   font-size: 1rem;
   line-height: 130%;
-  margin-left: 5px;
 }
 
 .subscribe__img {
   position: absolute;
-  right: 0;
+  margin-left: 1184px;
   top: inherit;
-  width: 802px;
+  display: flex;
+  width: 802.71px;
+  height: 658.39px;
+  display: flex;
+
 }
 
 /* --- FOOTER --- */
@@ -1680,7 +1693,7 @@ img {
     margin-top: 44px;
   }
 
-  .news__more a {
+  .news__more1 a {
     font-size: 0.875rem;
   }
 
@@ -1781,7 +1794,7 @@ img {
     border-radius: 8px;
   }
 
-  .inst__btn svg {
+  .inst__btn1 svg {
     width: 49px;
     height: 49px;
   }
@@ -1828,7 +1841,6 @@ img {
 
   .sub-text a {
     font-size: 0.75rem;
-    margin-left: 3px;
   }
 
   .subscribe__img {
@@ -1917,6 +1929,10 @@ img {
 }
 
 @media (max-width: 768px) {
+  section {
+    overflow: hidden;
+  }
+
   .h1 {
     font-size: 3.125rem;
     line-height: 125%;
@@ -2399,8 +2415,6 @@ img {
     font-size: 1.25rem;
   }
 
-  /* --- КАК МЫ ОБЖАРИВАЕМ КОФЕ --- */
-
   .coffee-roasting {
     padding: 186px 34px 0px 34px;
   }
@@ -2430,6 +2444,8 @@ img {
     margin-top: 80px;
     background: url(/asset/img/news/Rectangle\ 44.svg);
     background-position: bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
   }
 
   .news__title {
@@ -2455,7 +2471,7 @@ img {
     align-items: flex-end;
     align-items: center;
     position: relative;
-    width: 100px;
+    width: 110px;
     height: 16px;
   }
 
@@ -2469,6 +2485,54 @@ img {
     display: block;
   }
 
+  .news-arrow__right span::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    top: -3px;
+    right: -2px;
+    background-color: var(--base-text-color);
+    transform: rotate(45deg);
+    border-radius: 1.5px;
+  }
+
+  .news-arrow__right span::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    top: 3px;
+    right: -2px;
+    background-color: var(--base-text-color);
+    transform: rotate(-45deg);
+    border-radius: 1.5px;
+  }
+
+  .news-arrow__left span::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    top: -3px;
+    left: -2px;
+    background-color: var(--base-text-color);
+    transform: rotate(-45deg);
+    border-radius: 1.5px;
+  }
+
+  .news-arrow__left span::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    top: 3px;
+    left: -2px;
+    background-color: var(--base-text-color);
+    transform: rotate(45deg);
+    border-radius: 1.5px;
+  }
+
   .news__more1 a {
     position: absolute;
     opacity: 0;
@@ -2479,51 +2543,48 @@ img {
     margin-top: 85px;
   }
 
-  .news-cards__row {
-    display: flex;
-    justify-content: space-between;
+  .news-cards__row:last-child {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
   }
 
   .news-card {
-    position: relative;
-    margin: 20px;
-    max-height: 400px;
-    border-radius: 20px;
-    background-color: var(--ligth-bg-text-color);
-    box-shadow: 0px 0px 30px rgba(146, 146, 146, 0.2)
+    max-height: 769px;
+    box-shadow: 0px 0px 61.44px rgba(146, 146, 146, 0.2);
   }
 
   .type1 {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    width: 960px;
+    grid-template-columns: none;
+    grid-template-rows: 1fr 2fr;
+    width: 700px;
+    border-radius: 40px;
   }
 
   .news-card__col1 {
-    overflow: hidden;
-    border-radius: 20px 0 0 20px;
+    background-image: url(/asset/img/news/news.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px 40px 0 0;
   }
 
   .news-card__img {
     position: relative;
-    height: 100%;
+    width: 100%;
+    height: auto;
   }
 
   .news-card__img img {
-    height: 100%;
+    opacity: 0;
   }
 
   .news-card__col2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 40px 81px 30px 84px;
-  }
-
-  .news-card__title {
-    font-weight: 700;
-    line-height: 130%;
-    font-size: 1.5625rem;
+    padding: 60px 80px 80px 80px;
   }
 
   .news-card__text p {
@@ -2532,56 +2593,31 @@ img {
   }
 
   .news-card__more a {
-    color: var(--btn-bg-color);
-    font-size: 1.25rem;
-    line-height: 120%;
+    font-size: 1.5625rem;
+    line-height: 116%;
   }
 
   .news-card__more {
-    /* Здесь закончила */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 24px;
     max-width: 190px;
-    border-radius: 30px;
-    margin-left: -24px;
-    transition: background-color 0.3s ease-in-out;
-  }
-
-  .news-card__more:hover {
-    background-color: #F9F9F9;
-    padding: 10px 24px;
-    border-radius: 30px;
+    transition: none;
   }
 
   .type2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 680px;
-    padding: 62px 112px 62px 140px;
-  }
-
-  .type2__text {
-    /* margin-top: 40px; */
-    /* margin-bottom: 26px; */
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
   }
 
   .arrow {
-    display: flex;
-    align-items: flex-end;
-    align-items: center;
-    position: relative;
-    width: 20px;
-    height: 2px;
-    margin-left: 10px;
+    width: 30px;
+    height: 14px;
+    margin-left: 16px;
   }
 
   .arrow span {
     position: relative;
     top: 1px;
-    width: 13px;
+    width: 26px;
     height: 1px;
     background-color: var(--btn-bg-color);
     left: -1px;
@@ -2593,7 +2629,7 @@ img {
     position: absolute;
     width: 8px;
     height: 1px;
-    top: -3px;
+    top: -2.5px;
     right: -1px;
     background-color: var(--btn-bg-color);
     transform: rotate(45deg);
@@ -2612,43 +2648,60 @@ img {
     border-radius: 1.5px;
   }
 
-  /* --- МЫ В INSTAGRAM--- */
+  .news__more2 {
+    position: relative;
+    opacity: 1;
+    pointer-events: auto;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+  }
+
+  .news__more2 a {
+    font-weight: 500;
+    font-size: 1.5625rem;
+    line-height: 130%;
+    text-decoration: underline;
+    color: var(--base-text-color);
+  }
 
   .inst {
-    padding-top: 85px;
-    background: var(--btn-bg-color) url(/asset/img/inst/Group\ 251.svg);
-    background-size: cover;
-    overflow: hidden;
+    padding-top: 50px;
+    padding-bottom: 152px;
+    background: url(/asset/img/inst/айфон\ 10.png), url(/asset/img/inst/Group\ 330.svg), url(/asset/img/inst/Rectangle\ 44.svg);
+    background-size: 100%, 100%, 100%;
+    background-position: right bottom, bottom, top;
+    background-repeat: no-repeat, no-repeat, no-repeat;
   }
 
   .inst__row1 {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 50px;
   }
 
   .inst__title {
-    margin-right: 54px;
-    font-size: 3.125rem;
+    margin-right: 0;
+    font-size: 2.5rem;
   }
 
   .inst__icon {
-    width: 86px;
-    height: 86px;
+    width: 81px;
+    height: 81px;
+    margin-top: 40px;
   }
 
   .inst__row2 {
-    margin-top: 6px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
   }
 
   .inst__img {
     position: absolute;
-    width: auto;
-    height: 896px;
-    left: 0;
-    /* top: -64px; */
+    opacity: 0;
+    pointer-events: none;
   }
 
   .inst__img img {
@@ -2657,11 +2710,8 @@ img {
   }
 
   .inst__cards {
-    position: relative;
-    display: flex;
-    right: -158px;
-    max-width: 1240px;
-    margin-top: 64px;
+    right: auto;
+    margin-top: 0;
   }
 
   .inst__card {
@@ -2669,129 +2719,143 @@ img {
   }
 
   .inst__card img {
-    width: 400px;
-    border-radius: 10px;
+    width: 340px;
+    height: 389px;
   }
 
-  .inst__btn {
+  .inst__btn1 {
     position: absolute;
     background: transparent;
     border: none;
     right: 0;
   }
 
-  .inst__btn svg {
+  .inst__btn1 svg {
     width: 70px;
     height: 70px;
   }
 
-  /* --- ПОДПИСАТЬСЯ НА НОВОСТИ И РАССЫЛКУ --- */
+  .inst__btn2 {
+    background: transparent;
+    border: none;
+    margin-top: 32px;
+    position: relative;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .inst__row-mobile {
+    margin-top: 91px;
+    position: relative;
+    opacity: 1;
+    pointer-events: auto;
+  }
 
   .subscribe {
-    background: url(/asset/img/email/Group\ 253.svg);
-    background-position: top;
-    background-size: 100%;
-    background-repeat: no-repeat;
+    background: none;
   }
 
   .subscribe__container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .subscribe__col1 {
-    margin-top: 299px;
+    margin-top: 7px;
     display: flex;
     flex-direction: column;
-    max-width: 1100px;
+    max-width: 100%;
   }
 
   .subscribe__title {
-    font-size: 3.125rem;
+    font-size: 1.875rem;
   }
 
   .subscribe__text {
-    max-width: 757px;
-    font-size: 1.5625rem;
+    max-width: 605px;
+    font-size: 1.25rem;
   }
 
   .subscribe__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: relative;
-    width: 1100px;
-    margin: 0 auto;
-    background: var(--form-color);
-    border-radius: 40px;
-    margin-top: 60px;
+    width: 100%;
+    margin-top: 50px;
+    background: none;
   }
 
   .sub-form__input {
-    border: none;
-    outline: none;
-    background: transparent;
+    background: #F3F3F3;
     width: 100%;
-    height: 80px;
-    padding-left: 60px;
-    border-radius: 40px;
-    font-weight: 500;
-    font-size: 1.5625rem;
-    line-height: 130%;
+    height: 70px;
+    padding-left: 80px;
+    border-radius: 5px;
+    font-size: 1.375rem;
   }
 
   .sub-form__btn {
-    border: none;
-    border-radius: 40px;
-    height: 80px;
-    width: 260px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 25px 53px;
-    font-size: 1.5625rem;
+    margin-top: 20px;
+    border-radius: 5px;
+    height: 70px;
+    width: 100%;
+    position: relative;
+    top: auto;
+    right: auto;
+    padding: 20px auto;
   }
 
   .sub-text {
     display: flex;
-    justify-content: start;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: baseline;
+    max-width: 492px;
   }
 
   .sub-text p {
-    color: var(--comment-color);
-    font-weight: 500;
-    font-size: 1rem;
-    line-height: 130%;
+    font-size: 1.25rem;
   }
 
   .sub-text a {
-    color: var(--btn-bg-color);
-    font-weight: 500;
-    font-size: 1rem;
-    line-height: 130%;
-    margin-left: 5px;
+    font-size: 1.25rem;
   }
 
   .subscribe__img {
-    position: absolute;
-    right: 0;
-    top: inherit;
-    width: 802px;
+    position: relative;
+    right: auto;
+    top: -30px;
+    left: 75px;
+    width: 537px;
   }
 
-  /* --- FOOTER --- */
-
   .footer {
-    margin-top: 189px;
-    margin-bottom: 100px;
+    margin-top: 100px;
+    margin-bottom: 80px;
   }
 
   .footer__container {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
   }
 
   .footer__logo {
+    margin-top: 50px;
     flex-shrink: 0;
+    order: 2;
+  }
+
+  .footer__navigation {
+    order: 1;
+  }
+
+  .footer__navigation .menu__link {
+    font-size: 1.5625rem;
   }
 
   /* --- DIALOG --- */
