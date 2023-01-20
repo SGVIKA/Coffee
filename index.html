@@ -28,19 +28,6 @@
           <img src="/asset/img/icons/logo.svg" alt="Логотип сайта Кофе" width="260" height="116">
         </a>
 
-        <div class="search">
-          <form class="search__form" action="">
-            <button class="search__btn" type="button">
-              <svg width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M34 33L26.2667 25.5083M30.4444 15.7778C30.4444 23.387 24.0769 29.5556 16.2222 29.5556C8.36751 29.5556 2 23.387 2 15.7778C2 8.16852 8.36751 2 16.2222 2C24.0769 2 30.4444 8.16852 30.4444 15.7778Z"
-                  stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </button>
-            <input class="search__input" type="search" placeholder="Поиск по товарам">
-          </form>
-        </div>
-
         <nav class="header__navigation nav">
           <ul class="menu list-reset">
             <li class="menu__item"><a href="#katalog" class="menu__link">Каталог товаров</a></li>
@@ -166,7 +153,8 @@
           </div>
           <div class="discounts__text">
             <p class="text">Наша компания предлагает покупать товар&nbsp;со&nbsp;скидкой не только в дни
-              распродаж&nbsp;или в&nbsp;течение действия ограниченных предложений, но и пользоваться скидками постоянно!
+              распродаж&nbsp;или в&nbsp;течение действия ограниченных предложений, но&nbsp;и&nbsp;пользоваться скидками
+              постоянно!
             </p>
           </div>
         </div>
@@ -638,9 +626,7 @@
         <div class="news-cards">
           <div class="news-cards__row">
             <article class="news-card type1">
-              <div class="news-card__col1">
-                <figure class="news-card__img"><img src="/asset/img/news/news.jpg" alt=""></figure>
-              </div>
+              <div class="news-card__col1"></div>
               <div class="news-card__col2">
                 <h3 class="news-card__title h3-1">Танзанийский кофе. Откуда он взялся и почему мы его так любим?</h3>
                 <div class="news-card__text">
@@ -688,9 +674,7 @@
               </div>
             </article>
             <article class="news-card type1">
-              <div class="news-card__col1">
-                <figure class="news-card__img"><img src="/asset/img/news/news.jpg" alt=""></figure>
-              </div>
+              <div class="news-card__col1"></div>
               <div class="news-card__col2">
                 <h3 class="news-card__title h3-1">Танзанийский кофе. Откуда он взялся и почему мы его так любим?</h3>
                 <div class="news-card__text">
@@ -810,38 +794,149 @@
     </div>
   </footer>
 
-  <div class="dialog">
+  <div class="dialog reg">
     <div class="dialog__overlay"></div>
     <div class="dialog__content">
 
-      <div class="dialog-reg__col1 reg-col">
+      <div class="d-col1 dialog__col">
         <figure class="dialog__img"><img src="/asset/img/dialog/Group255.png" alt=""></figure>
-        <div class="reg-col__text">
-          <h3 class="reg__title2 h3-2">Добро пожаловать!</h3>
-          <p class="reg-text2 text">Уже есть аккаунт?</p>
+        <div class="d-col1__inf">
+          <h3 class="d-col1__title h3-2">Добро пожаловать!</h3>
+          <p class="d-col1__text text">Уже есть аккаунт?</p>
         </div>
-        <button class="reg-btn2 btn" type="button">Войти</button>
+        <button class="d-col1__btn btn" type="button">Войти</button>
       </div>
 
-      <div class="dialog-reg__col2 reg-col">
-        <figure class="reg__logo"><img src="/asset/img/icons/logo.svg" alt=""></figure>
-        <h3 class="reg__title h3-2">Регистрация</h3>
-        <p class="text reg__text">Зарегистрируйтесь на сайте, чтобы первым получать скидки и узнавать акционные
+      <div class="d-col2 dialog__col">
+        <figure class="d-col2__logo"><img src="/asset/img/icons/logo.svg" alt=""></figure>
+        <h3 class="d-col2__title h3-2">Регистрация</h3>
+        <p class="text d-col2__text reg-text">Зарегистрируйтесь на сайте, чтобы первым получать скидки и узнавать
+          акционные
           предложения!</p>
-        <form class="reg__form form" action="">
+        <form class="d-col2__form form" action="">
           <fieldset class="form__group"><input class="form__input" type="text" placeholder="Имя и фамилия"></fieldset>
           <fieldset class="form__group"><input class="form__input" type="text" placeholder="Email"></fieldset>
           <fieldset class="form__group"><input class="form__input" type="text" placeholder="Email"></fieldset>
           <fieldset class="form__group"><input class="form__input" type="password" placeholder="Придумайте пароль">
           </fieldset>
-          <button class="reg-btn btn" type="submit">Зарегистрироваться</button>
+          <button class="d-col2__btn btn" type="submit">Зарегистрироваться</button>
         </form>
+        <p class="d-col2__subtext">Уже есть аккаунт?<button>Войти</button></p>
         <button class="dialog__close">
           <span></span>
         </button>
       </div>
     </div>
   </div>
+
+  <div class="dialog input">
+    <div class="dialog__overlay"></div>
+    <div class="dialog__content">
+
+      <div class="d-col1 dialog__col">
+        <figure class="dialog__img"><img src="/asset/img/dialog/Group255.png" alt=""></figure>
+        <div class="d-col1__inf">
+          <h3 class="d-col1__title h3-2">Регистрация</h3>
+          <p class="d-col1__text text">Получайте скидки первым!</p>
+        </div>
+        <button class="d-col1__btn btn" type="button">Зарегистрироваться</button>
+      </div>
+
+      <div class="d-col2 dialog__col">
+        <figure class="d-col2__logo"><img src="/asset/img/icons/logo.svg" alt=""></figure>
+        <h3 class="d-col2__title h3-2 input-title">Войти в личный кабинет</h3>
+        <div class="d-col2__row2">
+          <form class="d-col2__form form" action="">
+            <fieldset class="form__group"><input class="form__input" type="text" placeholder="Email"></fieldset>
+            <fieldset class="form__group"><input class="form__input" type="password" placeholder="Введите пароль">
+            </fieldset>
+            <button class="d-col2__btn btn" type="submit">Войти</button>
+          </form>
+          <button class="d-col2__btn2">Забыли пароль?</button>
+        </div>
+        <div class="input-row3">
+          <button class="input-btn">Регистрация</button>
+          <button class="input-btn">Забыли пароль?</button>
+        </div>
+        <button class="dialog__close">
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="dialog pas1">
+    <div class="dialog__overlay"></div>
+    <div class="dialog__content">
+
+      <div class="d-col1 dialog__col">
+        <figure class="dialog__img"><img src="/asset/img/dialog/Group255.png" alt=""></figure>
+        <div class="d-col1__inf">
+          <h3 class="d-col1__title h3-2">Регистрация</h3>
+          <p class="d-col1__text text">Получайте скидки первым!</p>
+        </div>
+        <button class="d-col1__btn btn" type="button">Зарегистрироваться</button>
+      </div>
+
+      <div class=" dialog__col pas1-col2">
+        <figure class="d-col2__logo"><img src="/asset/img/icons/logo.svg" alt=""></figure>
+        <div class="d-col2__row1">
+          <h3 class="d-col2__title h3-2">Забыли пароль?</h3>
+          <p class="text d-col2__text pas1-text">Введите вашу почту и мы пришлем вам проверочный код на почту</p>
+        </div>
+        <div class="d-col2__row2">
+          <form class="d-col2__form form" action="">
+            <fieldset class="form__group"><input class="form__input" type="text" placeholder="Email"></fieldset>
+            </fieldset>
+            <button class="d-col2__btn btn" type="submit">Получить код</button>
+          </form>
+          <button class="d-col2__btn2 pas1-btn2">Вернуться на страницу входа</button>
+        </div>
+        <button class="dialog__close">
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="dialog pas2">
+    <div class="dialog__overlay"></div>
+    <div class="dialog__content">
+
+      <div class="d-col1 dialog__col">
+        <figure class="dialog__img"><img src="/asset/img/dialog/Group255.png" alt=""></figure>
+        <div class="d-col1__inf">
+          <h3 class="d-col1__title h3-2">Регистрация</h3>
+          <p class="d-col1__text text">Получайте скидки первым!</p>
+        </div>
+        <button class="d-col1__btn btn" type="button">Зарегистрироваться</button>
+      </div>
+
+      <div class=" dialog__col pas1-col2">
+        <figure class="d-col2__logo"><img src="/asset/img/icons/logo.svg" alt=""></figure>
+        <div class="d-col2__row1">
+          <h3 class="d-col2__title h3-2">Забыли пароль?</h3>
+          <p class="text d-col2__text pas1-text pas2-text">Мы выслали вам на почту проверочный код.
+            <br>Введите&nbsp;его&nbsp;и&nbsp;ниже&nbsp;и&nbsp;придумайте&nbsp;новый&nbsp;пароль
+          </p>
+        </div>
+        <div class="d-col2__row2">
+          <form class="d-col2__form form" action="">
+            <fieldset class="form__group"><input class="form__input" type="text" placeholder="Введите код"></fieldset>
+            </fieldset>
+            <fieldset class="form__group"><input class="form__input" type="password" placeholder="Введите новый пароль">
+            </fieldset>
+            <button class="d-col2__btn btn" type="submit">Обновить пароль</button>
+          </form>
+          <button class="pas2-btn2">Отправить код повторно</button>
+        </div>
+        <button class="dialog__close">
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+
 </body>
 
 </html>
