@@ -3345,7 +3345,7 @@ img {
   }
 
   .discounts__title {
-    font-size: 1.25 rem;
+    font-size: 1.25rem;
   }
 
   .discounts__text {
@@ -3989,7 +3989,7 @@ img {
     padding: 9px 17px 0 18px;
     max-width: 340px;
     border-radius: 0;
-    max-height: non6
+    max-height: none;
   }
 
   .pas1-col2 {
