@@ -25,7 +25,11 @@
         </button>
 
         <a href="/" class="header__logo logo">
-          <img src="/asset/img/icons/logo.svg" alt="Логотип сайта Кофе" width="260" height="116">
+          <picture>
+            <source srcset="/asset/img/icons/logo.avif" type="image/avif">
+            <source srcset="/asset/img/icons/logo.webp" type="image/webp">
+            <img src="/asset/img/icons/logo.svg" alt="Логотип сайта Кофе" width="260" height="116">
+          </picture>
         </a>
 
         <nav class="header__navigation nav">
@@ -87,7 +91,14 @@
             <div class="first-screen__text">
               <p class="text">Кофе Калининградской обжарки из разных стран произрастания с доставкой на дом.</p>
               <p class="text">Мы обжариваем кофе <span class="text-bold">каждые&nbsp;выходные.</span></p>
-              <figure><img class="f-scr__mobile-img" src="/asset/img/main1/coffee_cup.png" alt="Чашка кофе"></figure>
+              <figure>
+                <picture>
+                  <source srcset="/asset/img/first_screen/coffee_cup.avif" type="image/avif">
+                  <source srcset="/asset/img/first_screen/coffee_cup.webp" type="image/webp">
+                  <img class="f-scr__mobile-img" src="/asset/img/first_screen/coffee_cup.png" alt="Чашка кофе"
+                    width="899.11" height="772.87">
+                </picture>
+              </figure>
             </div>
             <div class="first-screen__el2">
               <svg width="135" height="25" viewBox="0 0 135 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -99,7 +110,14 @@
             <a class="first-screen__btn btn" href="#">Посмотреть каталог</a>
           </div>
           <div class="col col3">
-            <figure><img class="first-screen__img" src="/asset/img/main1/coffee_cup.png" alt="Чашка кофе"></figure>
+            <figure>
+              <picture>
+                <source srcset="/asset/img/first_screen/coffee_cup.avif" type="image/avif">
+                <source srcset="/asset/img/first_screen/coffee_cup.webp" type="image/webp">
+                <img class="first-screen__img" src="/asset/img/first_screen/coffee_cup.png" alt="Чашка кофе"
+                  width="713.38" height="614.65">
+              </picture>
+            </figure>
           </div>
         </div>
       </div>
@@ -117,22 +135,46 @@
         <h2 class="products__title h2">Каталоги нашей продукции</h2>
         <div class="products__cards">
           <article class="products-card">
-            <figure><img src="/asset/img/service_card/beans.png" alt="Кофейные зерна"></figure>
+            <figure>
+              <picture>
+                <source srcset="/asset/img/service_card/beans.avif" type="image/avif">
+                <source srcset="/asset/img/service_card/beans.webp" type="image/webp">
+                <img src="/asset/img/service_card/beans.png" alt="Кофейные зерна" width="295" height="212">
+              </picture>
+            </figure>
             <h3 class="card__title h3-1">Свежеобжаренный кофе</h3>
             <a class="products-card__btn btn" href="#">Купить</a>
           </article>
           <article class="products-card">
-            <figure class="card2__img"><img src="/asset/img/service_card/tea_card.png" alt="Чайник"></figure>
+            <figure class="card2__img">
+              <picture>
+                <source srcset="/asset/img/service_card/tea_card.avif" type="image/avif">
+                <source srcset="/asset/img/service_card/tea_card.webp" type="image/webp">
+                <img src="/asset/img/service_card/tea_card.png" alt="Чайник" width="235" height="278">
+              </picture>
+            </figure>
             <h3 class="card__title h3-1">Чай и кофейные напитки</h3>
             <a class="products-card__btn btn" href="#">Купить</a>
           </article>
           <article class="products-card">
-            <figure><img src="/asset/img/service_card/machin.png" alt="Кофемашина"></figure>
+            <figure>
+              <picture>
+                <source srcset="/asset/img/service_card/machin.avif" type="image/avif">
+                <source srcset="/asset/img/service_card/machin.webp" type="image/webp">
+                <img src="/asset/img/service_card/machin.png" alt="Кофемашина" width="276" height="253">
+              </picture>
+            </figure>
             <h3 class="card__title h3-1">Продукция для вендинга</h3>
             <a class="products-card__btn btn" href="#">Купить</a>
           </article>
           <article class="products-card">
-            <figure><img src="/asset/img/service_card/pp.png" alt="Тарелка"></figure>
+            <figure>
+              <picture>
+                <source srcset="/asset/img/service_card/pp.avif" type="image/avif">
+                <source srcset="/asset/img/service_card/pp.webp" type="image/webp">
+                <img src="/asset/img/service_card/pp.png" alt="Тарелка" width="266" height="186">
+              </picture>
+            </figure>
             <h3 class="card__title card__title4 h3-1">Здоровое питание</h3>
             <a class="products-card__btn btn" href="#">Купить</a>
           </article>
@@ -142,9 +184,18 @@
 
     <section class="discounts section">
       <div class="decor">
-        <figure class="discounts__decor"><img
-            src="/asset/img/service_card/kisspng-coffee-bean-cafe-clip-art-messy-coffee-beans-5a8331b6c128081.png"
-            alt=""></figure>
+        <figure class="discounts__decor">
+          <picture>
+            <source
+              srcset="/asset/img/service_card/kisspng-coffee-bean-cafe-clip-art-messy-coffee-beans-5a8331b6c128081.avif"
+              type="image/avif">
+            <source
+              srcset="/asset/img/service_card/kisspng-coffee-bean-cafe-clip-art-messy-coffee-beans-5a8331b6c128081.webp"
+              type="image/webp">
+            <img src="/asset/img/service_card/kisspng-coffee-bean-cafe-clip-art-messy-coffee-beans-5a8331b6c128081.png"
+              alt="" width="674" height="674">
+        </figure>
+        </picture>
       </div>
       <div class="container">
         <div class="discounts__row">
@@ -184,10 +235,16 @@
                   <option value="1000">1000 г.</option>
                 </select>
               </div>
+
               <div>
                 <p class="discount">Скидки</p>
                 <div class="discount-card__row">
-                  <figure class="discount-card__img"><img src="/asset/img/coffee_card/coffee1.jpg" alt="Упаковка кофе">
+                  <figure class="discount-card__img">
+                    <picture>
+                      <source srcset="/asset/img/discount_card/coffee1.avif" type="image/avif">
+                      <source srcset="/asset/img/discount_card/coffee1.webp" type="image/webp">
+                      <img src="/asset/img/discount_card/coffee1.jpg" alt="Упаковка кофе" width="172" height="311">
+                    </picture>
                   </figure>
                   <div class="discount-card__inf">
                     <svg class="inf__row1" width="133" height="25" viewBox="0 0 133 25" fill="none"
@@ -304,7 +361,12 @@
               <div>
                 <p class="discount">Скидки</p>
                 <div class="discount-card__row">
-                  <figure class="discount-card__img"><img src="/asset/img/coffee_card/coffee1.jpg" alt="Упаковка кофе">
+                  <figure class="discount-card__img">
+                    <picture>
+                      <source srcset="/asset/img/discount_card/coffee1.avif" type="image/avif">
+                      <source srcset="/asset/img/discount_card/coffee1.webp" type="image/webp">
+                      <img src="/asset/img/discount_card/coffee1.jpg" alt="Упаковка кофе" width="172" height="311">
+                    </picture>
                   </figure>
                   <div class="discount-card__inf">
                     <svg class="inf__row1" width="133" height="25" viewBox="0 0 133 25" fill="none"
@@ -421,7 +483,12 @@
               <div>
                 <p class="discount">Скидки</p>
                 <div class="discount-card__row">
-                  <figure class="discount-card__img"><img src="/asset/img/coffee_card/coffee1.jpg" alt="Упаковка кофе">
+                  <figure class="discount-card__img">
+                    <picture>
+                      <source srcset="/asset/img/discount_card/coffee1.avif" type="image/avif">
+                      <source srcset="/asset/img/discount_card/coffee1.webp" type="image/webp">
+                      <img src="/asset/img/discount_card/coffee1.jpg" alt="Упаковка кофе" width="172" height="311">
+                    </picture>
                   </figure>
                   <div class="discount-card__inf">
                     <svg class="inf__row1" width="133" height="25" viewBox="0 0 133 25" fill="none"
@@ -538,7 +605,11 @@
         <div class="benefits__col">
           <div>
             <figure class="benefits__img">
-              <img src="/asset/img/benefits/benefits_img.png" alt="">
+              <picture>
+                <source srcset="/asset/img/benefits/benefits_img.avif" type="image/avif">
+                <source srcset="/asset/img/benefits/benefits_img.webp" type="image/webp">
+                <img src="/asset/img/benefits/benefits_img.png" alt="" width="754.81" height="600.35">
+              </picture>
             </figure>
           </div>
           <div>
@@ -716,19 +787,61 @@
         </div>
       </div>
       <div class="inst__row2">
-        <figure class="inst__img"><img src="/asset/img/inst/Group248.png" alt=""></figure>
+        <figure class="inst__img">
+          <picture>
+            <source srcset="/asset/img/inst/Group248.avif" type="image/avif">
+            <source srcset="/asset/img/inst/Group248.webp" type="image/webp">
+            <img src="/asset/img/inst/Group248.png" alt="" width="663" height="896">
+          </picture>
+        </figure>
         <div class="inst__cards">
           <div class="inst__card-col">
-            <figure class="inst__card"><img src="/asset/img/inst/Rectangle24.jpg" alt=""></figure>
-            <figure class="inst__card"><img src="/asset/img/inst/Rectangle24.jpg" alt=""></figure>
+            <figure class="inst__card">
+              <picture>
+                <source srcset="/asset/img/inst/Rectangle24.avif" type="image/avif">
+                <source srcset="/asset/img/inst/Rectangle24.webp" type="image/webp">
+                <img src="/asset/img/inst/Rectangle24.jpg" alt="" width="400" height="382">
+              </picture>
+            </figure>
+            <figure class="inst__card">
+              <picture>
+                <source srcset="/asset/img/inst/Rectangle24.avif" type="image/avif">
+                <source srcset="/asset/img/inst/Rectangle24.webp" type="image/webp">
+                <img src="/asset/img/inst/Rectangle24.jpg" alt="" width="400" height="382">
+              </picture>
+            </figure>
           </div>
           <div class="inst__card-col">
-            <figure class="inst__card"><img src="/asset/img/inst/Rectangle24.jpg" alt=""></figure>
-            <figure class="inst__card"><img src="/asset/img/inst/Rectangle24.jpg" alt=""></figure>
+            <figure class="inst__card">
+              <picture>
+                <source srcset="/asset/img/inst/Rectangle24.avif" type="image/avif">
+                <source srcset="/asset/img/inst/Rectangle24.webp" type="image/webp">
+                <img src="/asset/img/inst/Rectangle24.jpg" alt="" width="400" height="382">
+              </picture>
+            </figure>
+            <figure class="inst__card">
+              <picture>
+                <source srcset="/asset/img/inst/Rectangle24.avif" type="image/avif">
+                <source srcset="/asset/img/inst/Rectangle24.webp" type="image/webp">
+                <img src="/asset/img/inst/Rectangle24.jpg" alt="" width="400" height="382">
+              </picture>
+            </figure>
           </div>
           <div class="inst__card-col">
-            <figure class="inst__card"><img src="/asset/img/inst/Rectangle24.jpg" alt=""></figure>
-            <figure class="inst__card"><img src="/asset/img/inst/Rectangle24.jpg" alt=""></figure>
+            <figure class="inst__card">
+              <picture>
+                <source srcset="/asset/img/inst/Rectangle24.avif" type="image/avif">
+                <source srcset="/asset/img/inst/Rectangle24.webp" type="image/webp">
+                <img src="/asset/img/inst/Rectangle24.jpg" alt="" width="400" height="382">
+              </picture>
+            </figure>
+            <figure class="inst__card">
+              <picture>
+                <source srcset="/asset/img/inst/Rectangle24.avif" type="image/avif">
+                <source srcset="/asset/img/inst/Rectangle24.webp" type="image/webp">
+                <img src="/asset/img/inst/Rectangle24.jpg" alt="" width="400" height="382">
+              </picture>
+            </figure>
           </div>
         </div>
 
@@ -744,8 +857,20 @@
       </div>
       <div class="inst__row-mobile container">
         <div class="inst__cards">
-          <figure class="inst__card"><img src="/asset/img/inst/Rectangle50.jpg" alt=""></figure>
-          <figure class="inst__card"><img src="/asset/img/inst/Rectangle50.jpg" alt=""></figure>
+          <figure class="inst__card">
+            <picture>
+              <source srcset="/asset/img/inst/Rectangle50.avif" type="image/avif">
+              <source srcset="/asset/img/inst/Rectangle50.webp" type="image/webp">
+              <img src="/asset/img/inst/Rectangle50.jpg" alt="" width="340" height="389">
+            </picture>
+          </figure>
+          <figure class="inst__card">
+            <picture>
+              <source srcset="/asset/img/inst/Rectangle50.avif" type="image/avif">
+              <source srcset="/asset/img/inst/Rectangle50.webp" type="image/webp">
+              <img src="/asset/img/inst/Rectangle50.jpg" alt="" width="340" height="389">
+            </picture>
+          </figure>
         </div>
         <button class="inst__btn2" type="button">
           <svg width="81" height="81" viewBox="0 0 81 81" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -759,7 +884,13 @@
     </section>
 
     <section class="subscribe section">
-      <figure class="subscribe__img"><img src="/asset/img/email/Group331.png" alt=""></figure>
+      <figure class="subscribe__img">
+        <picture>
+          <source srcset="/asset/img/email/Group331.avif" type="image/avif">
+          <source srcset="/asset/img/email/Group331.webp" type="image/webp">
+          <img src="/asset/img/email/Group331.png" alt="" width="802.71" height="658.39">
+        </picture>
+      </figure>
       <div class="subscribe__container container">
         <div class="subscribe__col1">
           <h2 class="subscribe__title h2">Подписка на новости и рассылку</h2>
@@ -782,7 +913,11 @@
   <footer class="footer">
     <div class="footer__container container">
       <a class="footer__logo logo" href="/">
-        <img src="/asset/img/icons/logo.svg" alt="Логотип сайта Кофе" width="260" height="116">
+        <picture>
+          <source srcset="/asset/img/icons/logo.avif" type="image/avif">
+          <source srcset="/asset/img/icons/logo.webp" type="image/webp">
+          <img src="/asset/img/icons/logo.svg" alt="Логотип сайта Кофе" width="260" height="116">
+        </picture>
       </a>
       <nav class="footer__navigation nav">
         <ul class="menu list-reset">
@@ -799,7 +934,13 @@
     <div class="dialog__content">
 
       <div class="d-col1 dialog__col">
-        <figure class="dialog__img"><img src="/asset/img/dialog/Group255.png" alt=""></figure>
+        <figure class="dialog__img">
+          <picture>
+            <source srcset="/asset/img/dialog/Group255.avif" type="image/avif">
+            <source srcset="/asset/img/dialog/Group255.webp" type="image/webp">
+            <img src="/asset/img/dialog/Group255.png" alt="" width="541" height="443.74">
+          </picture>
+        </figure>
         <div class="d-col1__inf">
           <h3 class="d-col1__title h3-2">Добро пожаловать!</h3>
           <p class="d-col1__text text">Уже есть аккаунт?</p>
@@ -808,7 +949,13 @@
       </div>
 
       <div class="d-col2 dialog__col">
-        <figure class="d-col2__logo"><img src="/asset/img/icons/logo.svg" alt=""></figure>
+        <figure class="d-col2__logo">
+          <picture>
+            <source srcset="/asset/img/icons/logo.avif" type="image/avif">
+            <source srcset="/asset/img/icons/logo.webp" type="image/webp">
+            <img src="/asset/img/icons/logo.svg" alt="" width="155" height="72">
+          </picture>
+        </figure>
         <h3 class="d-col2__title h3-2">Регистрация</h3>
         <p class="text d-col2__text reg-text">Зарегистрируйтесь на сайте, чтобы первым получать скидки и узнавать
           акционные
@@ -816,7 +963,7 @@
         <form class="d-col2__form form" action="">
           <fieldset class="form__group"><input class="form__input" type="text" placeholder="Имя и фамилия"></fieldset>
           <fieldset class="form__group"><input class="form__input" type="text" placeholder="Email"></fieldset>
-          <fieldset class="form__group"><input class="form__input" type="text" placeholder="Email"></fieldset>
+          <fieldset class="form__group"><input class="form__input" type="text" placeholder="Телефон"></fieldset>
           <fieldset class="form__group"><input class="form__input" type="password" placeholder="Придумайте пароль">
           </fieldset>
           <button class="d-col2__btn btn" type="submit">Зарегистрироваться</button>
@@ -834,7 +981,13 @@
     <div class="dialog__content">
 
       <div class="d-col1 dialog__col">
-        <figure class="dialog__img"><img src="/asset/img/dialog/Group255.png" alt=""></figure>
+        <figure class="dialog__img">
+          <picture>
+            <source srcset="/asset/img/dialog/Group255.avif" type="image/avif">
+            <source srcset="/asset/img/dialog/Group255.webp" type="image/webp">
+            <img src="/asset/img/dialog/Group255.png" alt="" width="541" height="443.74">
+          </picture>
+        </figure>
         <div class="d-col1__inf">
           <h3 class="d-col1__title h3-2">Регистрация</h3>
           <p class="d-col1__text text">Получайте скидки первым!</p>
@@ -843,7 +996,14 @@
       </div>
 
       <div class="d-col2 dialog__col">
-        <figure class="d-col2__logo"><img src="/asset/img/icons/logo.svg" alt=""></figure>
+        <figure class="d-col2__logo">
+          <picture>
+            <picture>
+              <source srcset="/asset/img/icons/logo.avif" type="image/avif">
+              <source srcset="/asset/img/icons/logo.webp" type="image/webp">
+              <img src="/asset/img/icons/logo.svg" alt="" width="155" height="72">
+            </picture>
+        </figure>
         <h3 class="d-col2__title h3-2 input-title">Войти в личный кабинет</h3>
         <div class="d-col2__row2">
           <form class="d-col2__form form" action="">
@@ -870,7 +1030,13 @@
     <div class="dialog__content">
 
       <div class="d-col1 dialog__col">
-        <figure class="dialog__img"><img src="/asset/img/dialog/Group255.png" alt=""></figure>
+        <figure class="dialog__img">
+          <picture>
+            <source srcset="/asset/img/dialog/Group255.avif" type="image/avif">
+            <source srcset="/asset/img/dialog/Group255.webp" type="image/webp">
+            <img src="/asset/img/dialog/Group255.png" alt="" width="541" height="443.74">
+          </picture>
+        </figure>
         <div class="d-col1__inf">
           <h3 class="d-col1__title h3-2">Регистрация</h3>
           <p class="d-col1__text text">Получайте скидки первым!</p>
@@ -879,7 +1045,13 @@
       </div>
 
       <div class=" dialog__col pas1-col2">
-        <figure class="d-col2__logo"><img src="/asset/img/icons/logo.svg" alt=""></figure>
+        <figure class="d-col2__logo">
+          <picture>
+            <source srcset="/asset/img/icons/logo.avif" type="image/avif">
+            <source srcset="/asset/img/icons/logo.webp" type="image/webp">
+            <img src="/asset/img/icons/logo.svg" alt="" width="155" height="72">
+          </picture>
+        </figure>
         <div class="d-col2__row1">
           <h3 class="d-col2__title h3-2">Забыли пароль?</h3>
           <p class="text d-col2__text pas1-text">Введите вашу почту и мы пришлем вам проверочный код на почту</p>
@@ -903,7 +1075,13 @@
     <div class="dialog__content">
 
       <div class="d-col1 dialog__col">
-        <figure class="dialog__img"><img src="/asset/img/dialog/Group255.png" alt=""></figure>
+        <figure class="dialog__img">
+          <picture>
+            <source srcset="/asset/img/dialog/Group255.avif" type="image/avif">
+            <source srcset="/asset/img/dialog/Group255.webp" type="image/webp">
+            <img src="/asset/img/dialog/Group255.png" alt="" width="541" height="443.74">
+          </picture>
+        </figure>
         <div class="d-col1__inf">
           <h3 class="d-col1__title h3-2">Регистрация</h3>
           <p class="d-col1__text text">Получайте скидки первым!</p>
@@ -911,8 +1089,14 @@
         <button class="d-col1__btn btn" type="button">Зарегистрироваться</button>
       </div>
 
-      <div class=" dialog__col pas1-col2">
-        <figure class="d-col2__logo"><img src="/asset/img/icons/logo.svg" alt=""></figure>
+      <div class="dialog__col pas1-col2">
+        <figure class="d-col2__logo">
+          <picture>
+            <source srcset="/asset/img/icons/logo.avif" type="image/avif">
+            <source srcset="/asset/img/icons/logo.webp" type="image/webp">
+            <img src="/asset/img/icons/logo.svg" alt="" width="155" height="72">
+          </picture>
+        </figure>
         <div class="d-col2__row1">
           <h3 class="d-col2__title h3-2">Забыли пароль?</h3>
           <p class="text d-col2__text pas1-text pas2-text">Мы выслали вам на почту проверочный код.
