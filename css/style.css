@@ -394,9 +394,14 @@ img {
   pointer-events: none;
 }
 
-.products-card figure>img {
+.products-card img {
   max-height: 278px;
   max-width: 295px;
+  width: auto;
+  height: 100%;
+}
+
+.products-card figure {
   transition: 0.5s ease-in-out;
 }
 
@@ -417,7 +422,6 @@ img {
 }
 
 .products-card:hover h3 {
-  font-weight: 700;
   font-size: 1.875rem;
   transform: translateY(-36px);
 }
@@ -1582,15 +1586,10 @@ img {
     padding: 10px 86px;
   }
 
-  .products-card figure>img {
+  .products-card img {
     max-height: 196px;
     max-width: 188px;
   }
-/*
-  .card2__img {
-    position: relative;
-    top: -30px;
-  } */
 
   .card__title {
     font-size: 1.125rem;
@@ -2302,7 +2301,7 @@ img {
     transition: none;
   }
 
-  .products-card figure>img {
+  .products-card img {
     max-height: 244px;
     max-width: 340px;
     transition: none;
@@ -2322,6 +2321,7 @@ img {
   }
 
   .products-card:hover h3 {
+    font-size: 1.375rem;
     transform: none;
   }
 
@@ -2517,7 +2517,8 @@ img {
 
   .coffee-roasting__btn {
     margin-top: 96px;
-    max-width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   .coffee-roasting__btn a {
@@ -3208,10 +3209,6 @@ img {
     height: 15px;
   }
 
-  .logo img {
-    height: 50px;
-  }
-
   .header__logo {
     margin-left: auto;
     margin-right: auto;
@@ -3365,10 +3362,19 @@ img {
     transition: none;
   }
 
-  .products-card figure>img {
+  .products-card img {
     max-height: 168px;
     max-width: 235px;
     transition: none;
+  }
+
+  .products-card:hover figure {
+    transform: none;
+  }
+
+  .products-card:hover h3 {
+    font-size: 1.125rem;
+    transform: none;
   }
 
   .card__title {
@@ -3378,14 +3384,6 @@ img {
 
   .card2__img {
     transition: none
-  }
-
-  .products-card:hover figure {
-    transform: none;
-  }
-
-  .products-card:hover h3 {
-    transform: none;
   }
 
   .discounts {
@@ -3578,7 +3576,6 @@ img {
 
   .coffee-roasting__btn {
     margin-top: 40px;
-    max-width: 100%;
   }
 
   .coffee-roasting__btn a {
@@ -3987,6 +3984,8 @@ img {
     margin-top: 30px;
     flex-shrink: 0;
     order: 2;
+    width: 110px;
+    height: 50px;
   }
 
   .footer__navigation {
