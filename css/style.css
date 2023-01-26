@@ -166,7 +166,7 @@ img {
   pointer-events: none;
   width: 1366px;
   height: 1689.93px;
-  right: -530px;
+  right: -540px;
   top: -130px;
   transform: rotate(10.63deg);
 }
@@ -1582,15 +1582,15 @@ img {
     padding: 10px 86px;
   }
 
-  .products-card figure {
+  .products-card figure>img {
     max-height: 196px;
     max-width: 188px;
   }
-
+/*
   .card2__img {
     position: relative;
     top: -30px;
-  }
+  } */
 
   .card__title {
     font-size: 1.125rem;
@@ -3169,20 +3169,20 @@ img {
     position: absolute;
     pointer-events: none;
     z-index: -1;
-    width: 844px;
-    height: 955px;
-    left: -500px;
-    top: 2750px;
-    transform: none;
+    width: 453.51px;
+    height: 561.05px;
+    left: -300px;
+    top: 1910px;
+    transform: rotate(0.18deg);
   }
 
   .decor3 {
     position: absolute;
     z-index: 100;
-    width: 509px;
-    height: 509px;
-    left: -241px;
-    top: 3100px;
+    width: 249px;
+    height: 249px;
+    left: -118px;
+    top: 2080px;
     pointer-events: none;
   }
 
